@@ -1,0 +1,63 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+$icon-images-path:        "../../assets/images/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #27ae60;
+$salmon: 				#fac8bf; //250,200,191
+$lighter-turquoise: 	#94fffc;
+$light-turquoise: 		#c5ede8;
+$dark-blue: 			#466675; //70,102,107
+$dusty-blue: 			#6a8d9d;
+$turquoise: 			#00af9b; //0,175,155
+$gold: 					#ffcc00; //255,204,0
+$text-grey:				#444444;
+$medium-grey:			#666666;
+$light-grey: 			#cccccc;
+$purple: 				#e4d4ef; //228,212,239
+
+.hide {
+	display: none;
+}
+
+// Mixins
+// TODO: Make separate file
+
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@-webkit-keyframes pop-in {
+0% { opacity: 0; -webkit-transform: scale(0.5); }
+100% { opacity: 1; -webkit-transform: scale(1); }
+}
+@-moz-keyframes pop-in {
+0% { opacity: 0; -moz-transform: scale(0.5); }
+100% { opacity: 1; -moz-transform: scale(1); }
+}
+@keyframes pop-in {
+0% { opacity: 0; transform: scale(0.5); }
+100% { opacity: 1; transform: scale(1); }
+}
+// font-family: 'Permanent Marker', cursive;
+// font-family: 'Gochi Hand', cursive;
+// font-family: 'Shadows Into Light', cursive;
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Amatic SC', cursive;
+// font-family: 'Blog Script Light'
+// font-family: 'Blog Script'
+
+$headings-font  	: 'Montserrat', sans-serif;
+$script-font		: BlogScript, cursive;
+$script-font-light	: BlogScriptLight, cursive;
+$serif-font			: playfair-display, serif;
+$serif-font-italic	: playfair-display, serif;
+$slab-serif-font	: 'Arvo', serif;

@@ -1,0 +1,89 @@
+.sidebar {
+
+	ul {
+		padding: 0px;
+	}
+
+	section {
+		padding: 20px;
+		background: $purple;
+		//margin-bottom: 20px;
+
+		h3 {
+			font-family: $script-font-light;
+			font-size: 25px;
+			color: #fff;
+			margin-top: 10px;
+		}
+	}
+
+	// Become a Contributor
+	.text-4, .text-2 {
+		text-align: center;
+		//background-color: rgba(0,175,155,0.23);
+		background-color: $light-turquoise;
+	    box-shadow: 2px 2px 5px 0px rgba(0,0,0,.15);
+	    transform: rotate(-3deg);
+	    margin: -10px;
+
+		p { 
+			text-align: center; 
+			font-size: 15px;
+			font-weight: 500;
+		}
+		.learnMore { 
+			font-size: 16px;
+			color: $dark-blue;
+			font-family: $headings-font;
+		}
+	}
+
+
+	.widget_wp_related_posts, .categories-2, .nav_menu-2, .widget_nav_menu {
+		h3 {	
+			font-family: $slab-serif-font;
+		}
+		li a {
+			font-family: $headings-font;
+		}
+	}
+
+	.authorBio {
+		text-align: justify;
+
+		h3 {
+			font-size: 27px;
+		}
+
+		.authorImage {
+			width: 104px;
+			height: 104px;
+			border: 4px solid #000;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+				height: 96px;
+				object-fit: cover;
+			}
+		}
+		.authorLink {
+			font-size: 15px;
+			line-height: 16px;
+			color: $turquoise;
+		}
+
+		.learnMore {
+			font-size: 13px;
+			color: $dark-blue;
+			font-style: italic;
+			text-align: right;
+
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+}

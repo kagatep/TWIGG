@@ -1,0 +1,109 @@
+/* =Social menu
+----------------------------------------------- */
+#social-menu a, #social-menu a:visited {
+    display: inline-block;
+    font-family: 'icomoon';
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: $medium-grey;
+	width: 20px;
+	height: 20px;
+}
+
+#social-menu a, #social-menu a:visited{
+    color: #ccc;
+}
+
+#social-menu .icon-facebook-rounded:hover{
+	color: #45619D;
+}
+
+#social-menu .icon-twitter:hover{
+	color: #1AB2E8;
+}
+
+#social-menu .icon-youtube:hover{
+	color: #C2302A;
+}
+
+#social-menu .icon-soundcloud-rounded:hover{
+	color: #F96604;
+}
+
+#social-menu .icon-flickr-rounded:hover{
+	color: #F3006F;
+}
+
+#social-menu .icon-google-rounded:hover{
+    color: #201f1d;
+}
+
+#social-menu .icon-vimeo-rounded:hover{
+    color: #229acc;
+}
+
+#social-menu .icon-linkedin-rounded:hover{
+    color: #0274b3;
+}
+
+#social-menu .icon-pinterest-rounded:hover{
+    color: #cb2027;
+}
+
+#social-menu .icon-picassa-rounded:hover{
+    color: #9864ae;
+}
+
+#social-menu .icon-instagram:hover{
+    color: #8c5d4d;
+}
+
+#social-menu .icon-tumblr-rounded:hover{
+    color: #34506b;
+}
+
+#social-menu .icon-deviantart-rounded:hover{
+    color: #000;
+}
+
+#social-menu .icon-dribbble-rounded:hover{
+    color: #e24d85;
+}
+
+#social-menu .icon-reddit:hover{
+    color: #000;
+}
+
+#social-menu .icon-behance-rounded:hover{
+    color: #2d9ad2;
+}
+
+#social-menu .icon-feed-rounded:hover{
+    color: #f68026;
+}
+
+#social-menu .fa {
+    font: normal normal normal 22px/1 FontAwesome !important;
+}
+
+#social-menu .searchIcon:hover {
+    color: $dusty-blue;
+}
+
+
+.simplesocialbuttons {
+    margin-top: 30px;
+    float: right;
+}
+div.ssb-button-fblike {
+    width: 85px;
+}
+
+div.ssb-button-twitter {
+    width: 85px;
+}
+
+div.ssb-button-pinterest {
+    width: 40px;
+}

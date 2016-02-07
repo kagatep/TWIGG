@@ -1,0 +1,67 @@
+.bubble {
+	text-align: center;
+	position: fixed;
+	color: #fff;
+
+    &.bubble1 {
+		width: 150px;
+		height: 150px;
+		background: rgba(255,204,0,.8);
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		border-radius: 100px;
+		bottom: -150px;
+		right: 50px;
+		-ms-transform: rotate(7deg); /* IE 9 */
+	    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+	    transform: rotate(7deg);
+		font-family: $script-font;
+	    @include transition(bottom 0.25s 400ms);
+	    //@include transition(opacity 400ms 200ms);
+	    font-size: 26px;
+	    padding-top: 40px;
+    }
+
+    &.bubble2 {
+    	width: 120px;
+		height: 120px;
+		background: rgba(0,175,155,.8);
+		-moz-border-radius: 150px;
+		-webkit-border-radius: 150px;
+		border-radius: 100px;
+		bottom: -250px;
+		right: 165px;
+		-ms-transform: rotate(-9deg); /* IE 9 */
+	    -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-9deg);
+		font-family: $slab-serif-font;
+	    @include transition(bottom 0.25s 400ms);
+	    font-size: 18px;
+	    line-height: 22px;
+	    padding-top: 26px;
+    }
+}
+
+.bubble.popIn {
+	-webkit-animation:pop-in 0.25s 400ms;
+	-moz-animation:pop-in 0.25s 400ms;
+	-ms-animation:pop-in 0.25s 400ms;
+}
+
+.bubble1.popIn {
+	bottom: 65px;
+}
+
+.bubble2.popIn {
+	bottom: 40px;
+}
+
+.bubble:hover {
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    color: #fff;
+}

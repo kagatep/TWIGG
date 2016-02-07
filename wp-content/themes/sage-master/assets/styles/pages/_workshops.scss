@@ -1,0 +1,27 @@
+body.workshops {
+	.fullPage {
+		background: url('#{$icon-images-path}categories/workshops.jpg') center center no-repeat;
+		background-size: cover;
+
+		@media (min-width: $screen-sm-min) {	
+			height: 500px;
+		}
+
+		.workshopsForm {
+			h2 {
+				font-family: $slab-serif-font;
+				color: $dusty-blue;
+			}
+			margin-top: 100px;
+			@media (min-width: $screen-sm-min) {
+				margin-top: 0px;
+				width: 350px;
+			    position: absolute;
+			    top: 45%;
+			    left: 10%;
+			}
+		    background: #fff;
+		    padding: 25px;
+		}
+	}
+}

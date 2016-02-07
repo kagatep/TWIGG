@@ -1,0 +1,35 @@
+body.author {
+	.authorBio {
+		background: rgba(250,200,191,.25);
+		padding: 20px;
+		//border-bottom: 3px solid $gold;
+		margin-bottom: 30px;
+
+		.userImg {
+			width: 33%;
+			float: left;
+			//margin-bottom: 15px;
+			margin-right: 20px;
+		}
+
+		h4 {
+			font-size: 22px;
+			color: $turquoise;
+		}
+		p {
+			font-size: 15px;
+			line-height: 24px;
+		}
+
+
+	}
+
+	.divider {
+		clear: both;
+	}
+
+	h3 a {
+		color: #666;
+	}
+
+}

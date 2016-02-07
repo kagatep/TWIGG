@@ -1,0 +1,65 @@
+body.contactus {
+	.twoThirdsPage {
+		.left {
+			background: url('#{$icon-images-path}categories/contact-us.jpg') top center no-repeat;
+			background-size: cover;
+		}
+
+		.right {
+			.content {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.unifiedContact {
+				position: relative;
+				height: 450px;
+
+				@media (min-width: $screen-sm-min) {	
+					height: 420px;
+				}
+			}
+			
+			h3 {
+				font-size: 16px;
+				line-height: 20px;
+				color: $text-grey;
+			}
+			h4 {
+				font-size: 18px;
+				line-height: 26px;
+
+				@media (min-width: $screen-sm-min) { 
+					font-size: 20px;
+				}
+	    		font-family: $slab-serif-font;
+				color: $gold;
+
+				a {
+					cursor: pointer;
+					color: $light-grey;
+					font-style: italic;
+				}
+
+				a.active {
+					font-style: normal;
+					color: $turquoise;
+					font-weight: 400;
+				}
+			}
+
+			.contactDiv {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
+	}
+	// @media (min-width: $screen-sm-min) {	
+	// 	footer.content-info {
+	// 		position: absolute;
+	// 		bottom: 0;
+	// 	}
+	// }
+}

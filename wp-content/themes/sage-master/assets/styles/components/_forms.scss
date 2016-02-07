@@ -1,0 +1,113 @@
+:focus {
+	outline-color: transparent;
+	outline-style: none;
+}	
+
+input {
+	background: none;
+	background-color: #fff;
+}
+input[type="search"] {
+	background-color: none;
+	border: 0;
+	box-shadow: none;
+	border-radius: 25px !important;
+}
+input[type="submit"], 
+.comment-form input[type=submit] {
+	border-radius: 15px;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 16px;
+    text-transform: lowercase;
+    font-family: $headings-font;
+    font-weight: 500;
+    color: $turquoise;
+    background: #fff;
+
+    &:hover {
+    	background: $turquoise;
+    	color: #fff;
+    }
+
+    &.purpleBtn {
+        background: $purple;
+        color: white;
+    }
+
+    &.turquoiseBtn {
+        background: $turquoise;
+        color: #fff;
+
+        &:hover {
+            background: $purple;
+        }
+    }
+}
+
+body.contactus, body.workshops {
+    input[type="submit"], 
+.comment-form input[type=submit] {
+    background: $turquoise;
+    color: #fff;
+    
+    &:hover {
+        color: $turquoise;
+        background: $purple;
+    }
+}
+
+}
+.comment-form input[type=submit] {
+	color: #fff;
+    background: $turquoise;
+
+    &:hover {
+    	background: $purple;
+    }
+}
+input[type="text"], input[type="email"] {
+	padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    width: 100%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+textarea {
+	resize: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    width: 100%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+    &.wpcf7-textarea {
+		height: 180px;
+    }
+}
+.search-form {
+	.input-group-btn {
+		font-size: 22px;
+
+		.fa-search {
+			background: none;
+			border: 0;
+		}
+	}
+}
+.search-submit {
+	margin-left: 10px !important;
+	border-radius: 0px;
+}

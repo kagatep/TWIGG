@@ -1,0 +1,156 @@
+.categoryBanner {
+	width: 100%;
+	height: 300px;
+	background: url('http://www.twigghowto.com/wp-content/uploads/2015/02/flowers8.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+	display: table;
+	box-shadow: 9px 10px 32px -10px rgba(0,0,0,0.15);
+
+	@media (min-width: $screen-sm-min) {
+	    height: 485px;
+	}
+
+	h2 {
+		display: table-cell;
+		vertical-align: middle;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 5px;
+		font-size: 26px;
+		text-transform: uppercase;
+
+		@media (min-width: $screen-sm-min) {
+		    font-size: 35px;
+		    letter-spacing: 6px;
+		}
+	}
+}
+
+header.categoryHeader {
+	
+	.headerWrap, .headerBg {
+		height: 55px;
+	}
+
+	.logo {
+		width: 60px;
+		@media (min-width: $screen-sm-min) {
+		    width: 80px;
+		}
+	}
+
+	.categoryNav {
+		float: right;
+		.primaryNav {
+			margin-top: 5px;
+			text-align: right;
+		}
+
+		li {
+			font-size: 15px;
+		}
+	}
+
+}
+
+body.about-us {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/about-us.png') center center no-repeat;
+		background-size: cover;
+		h2 {
+			font-family: $script-font;
+		    letter-spacing: 0px;
+		    font-size: 40px;
+		    text-transform: capitalize;
+		    color: $gold;
+		    //padding-top: 170px;
+		}
+	}
+}
+
+body.category-auto {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/auto.jpg') center center no-repeat;
+		background-size: cover;
+	}
+}
+
+body.category-law {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/law.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 30%;
+	}
+}
+
+body.category-travel {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/travel.jpg') top center no-repeat;
+		background-size: cover;
+	}
+}
+
+body.category-personal-pr {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/personal-PR.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 25%;
+	}
+}
+
+body.category-school {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/school_career.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 15%;
+	}
+}
+
+body.category-household {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/home.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 15%;
+	}
+}
+
+body.category-health {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/health.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 20%;
+
+		@media (min-width: $screen-sm-min) {
+			h2 {
+				color: #000;
+			}
+		}
+	}
+}
+
+body.category-finances {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/finance.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 20%;
+
+		h2 {
+			color: $text-grey;
+		}
+	}
+}
+
+body.category-tech {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/tech.jpg') top center no-repeat;
+		background-size: cover;
+	}
+}
+
+body.category-misc {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/misc.jpg') bottom center no-repeat;
+		background-size: cover;
+	}
+}

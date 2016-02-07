@@ -1,0 +1,143 @@
+.wrap {
+	margin-top: 100px;
+	
+	@media (min-width: $screen-sm-min) {
+		margin-top: 50px;
+	}
+}
+
+.category .wrap {
+	margin-top: 20px;
+
+	@media (min-width: $screen-sm-min) {
+		margin-top: 50px;
+	}
+}
+.home .wrap {
+	margin-top: 0px;
+}
+
+.stuff-we-love .wrap, .about-us .wrap {
+	margin-top: 20px;
+}
+
+
+article {
+	position: relative;
+
+	.entry-thumbnail {
+		// width: 100%;
+		height: 225px; 
+		// overflow: hidden;
+		position: relative;
+		margin-bottom: 15px;
+		@media (min-width: $screen-sm-min) {
+		    margin-bottom: 0px;
+		}
+
+		img {
+			width: 100%;
+			height: 225px;
+			object-fit: cover;
+			object-position: 50% 0;
+		}
+	}
+
+	.youtubeIcon { 
+		background: url('#{$icon-images-path}play-button.png') center center no-repeat;
+		background-size: 35%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+	}
+
+	header {
+		h1 {
+			color: $dark-blue;	
+		}
+
+		.updated {
+			font-weight: 300;
+			font-size: 17px;
+			line-height: 25px;
+			font-style: oblique;
+		}
+
+		p.author {	
+			line-height: 25px;
+			font-size: 16px;
+			a {
+				font-weight: 400;
+				color: $salmon;
+			}
+		}
+
+	}
+
+	footer {
+		padding-top: 20px;
+		clear: both;
+	}
+
+}
+
+.entry-content {
+	p {
+		font-size: 18px;
+		line-height: 32px;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: 17px;
+			line-height: 27px;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	h6 {
+		font-size: 16px;
+	}
+
+}
+
+.prevPost {
+	background: url('#{$icon-images-path}arrow-turquoise-l.png') top left no-repeat;
+	background-size: auto 100%;
+	padding-left: 40px;
+}
+
+.nextPost {
+	background: url('#{$icon-images-path}arrow-turquoise-r.png') top right no-repeat;
+	background-size: auto 100%;
+	padding-right: 40px;
+	text-align: right;
+}
+.postNav span {
+	font-family: $serif-font-italic;
+	font-style: italic;
+	color: $light-grey;
+}
+
+.postNav img {
+	height: 65px;
+}
+
+
+
+body.category, body.author {
+
+	.article {
+		margin-bottom: 30px;
+
+		h3 {
+			font-size: 18px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+	}
+}
