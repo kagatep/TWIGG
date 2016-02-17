@@ -1,0 +1,33 @@
+<!-- The "head" of an HTML file contains a bunch of information that isn't 
+directly part of the layout of the website. This includes things like what the
+website should look like (what fonts to use, what color the background should be) -->
+<head>
+	<!-- <title> sets the text that the browser shows in the tab for this website -->
+	<title>Nisha's Website!</title>
+
+	<!-- A "stylesheet" describes how the website should render the HTML we write. 
+	More simply, it tells the browser how the website should look (what fonts and colors to use, 
+	what layouts to use, etc.) -->
+	<!-- Here, we're not writing our own stylesheet - we're using one written by
+	a team at Twitter, called Bootstrap. Since it's open source, you can use it 
+	for your own project! -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<!-- These scripts are also part of Bootstrap, and contain code that allows you to 
+	create cool interactive components, like dropdown menus, tabbed layouts, and more.
+	Don't worry too much about this for now. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</head>
+
+<!-- The "body" of an HTML file contains the actual layout of the website. -->
+<body>
+	<!-- I always think of "divs" like sections or dividers. They split the page up into
+	different areas, helping you organize your page. They're really great for 
+	creating things like layouts with multiple columns and rows (like a newspaper). 
+	Here, we just have one div, which contains our entire website, but later, 
+	we'll add more divs. -->
+	<div class="container">
+		<h1>Hello, world!</h1>
+	</div>
+</body>
