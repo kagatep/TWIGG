@@ -1,7 +1,4 @@
-var TWIGG = {};
 $(document).ready(function() {
-	
-
 	if(window.location.hash === '#submithowto') {
 		$('h4 a').removeClass('active');
 		$('h4 a[data-tab="submitHowTo"]').addClass('active');
@@ -46,14 +43,4 @@ $(document).ready(function() {
 		var tab = $(this).data('opentab');
 		$('.accordionTab[data-tab="' + tab + '"]').slideToggle();
 	});
-
-	TWIGG.openOverlay = function() {
-		$('#overlay').removeClass('hide');
-		console.log('open overlay');
-	};
-
-	TWIGG.closeOverlay = function() {
-		$('#overlay').addClass('hide');
-	};
-
 });
