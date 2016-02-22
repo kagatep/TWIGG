@@ -17,3 +17,4 @@
 <?php else: ?>
 	<?php dynamic_sidebar('sidebar-category'); ?>
 <?php endif ?>
+<p class="postDisclaimer"><span>*</span>All articles featured on TWIGG How-To are the sole opinion of the contributor. Read the full Terms & Conditions <a href="/terms-and-conditions" target="_blank">here</a>.</p>
