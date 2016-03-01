@@ -21,8 +21,18 @@ body.stuff-we-love {
 	}
 
 	.stuff {
-		h4 {
+		h3 {
 			cursor: pointer;
+			font-weight: 700;
+		}
+		h4 {
+			color: #339966;
+			font-size: 16px;
+			font-weight: 700px;
+		}
+		ul li {
+			font-size: 16px;
+			font-family: $headings-font;
 		}
 		.content {
 			display: none;
