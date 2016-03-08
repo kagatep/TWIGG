@@ -1,5 +1,15 @@
 <?php if (is_category() || is_page( 'stuff-we-love' ) || is_page( 'about-us' )): ?>
     <div class="categoryBanner">
+        
+        <?php if (is_category( 'videos' )): ?>
+            <div class="videoWrapper">
+                <video autoplay loop muted>
+                  <source src="/wp-content/themes/sage-master/assets/videos/videos_category.mp4" type="video/mp4">
+                  <source src="/wp-content/themes/sage-master/assets/videos/videos_category.ogg" type="video/ogg">
+                </video>
+            </div>
+        <?php endif;  ?>
+
         <h2><?php is_category() ? single_cat_title() : the_title(); ?></h2>
     </div>
 
