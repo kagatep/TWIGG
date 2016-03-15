@@ -105,6 +105,28 @@ article {
 
 }
 
+.postDisclaimer {
+	font-size: 13px;
+    font-style: italic;
+    position: relative;
+    padding: 0 25px;
+    margin: 40px 0;
+	span {
+		color: $gold;
+		font-family: $slab-serif-font;
+		font-size: 65px;
+	    line-height: 0;
+	    position: absolute;
+	    top: 20px;
+	    font-style: initial;
+	    left: 0;
+	    transform: rotate(-10deg);
+	}
+	a {
+		font-weight: bold;
+		color: $dark-blue;
+	}
+}
 .prevPost {
 	background: url('#{$icon-images-path}arrow-turquoise-l.png') top left no-repeat;
 	background-size: auto 100%;
