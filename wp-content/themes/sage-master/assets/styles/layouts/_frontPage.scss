@@ -28,6 +28,11 @@ h4.intro {
 			color: $gold;
 			padding-right: 10px;
 			background-color: white;
+			transition: all .2s ease-in-out;
+		}
+		a:hover {
+			transform: scale(1.1);
+			font-size: 35px;
 		}
 	}
 
