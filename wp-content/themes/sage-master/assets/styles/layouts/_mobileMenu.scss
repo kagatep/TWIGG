@@ -15,6 +15,14 @@
 		top: -100%;
 	}
 
+	.mobileSearch {
+		margin-bottom: 30px;
+
+		.input-group {
+			margin: 0 auto;
+			width: 70%;
+		}
+	}
 	ul {
 		padding: 0;
 	}
@@ -37,6 +45,7 @@
 
 	.secondaryNav {
 		margin-top: 30px;
+		margin-bottom: 0;
 
 		li a { 
 			font-size: 16px; 
