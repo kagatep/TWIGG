@@ -21,8 +21,70 @@ body.stuff-we-love {
 	}
 
 	.stuff {
-		h4 {
+		h3 {
 			cursor: pointer;
+			font-weight: 700;
+			font-size: 26px;
+		}
+		h4 {
+			color: #339966;
+			font-size: 18px;
+			font-weight: 700;
+
+			&.songHeader {
+				color: #fff;
+				font-family: $script-font-light;
+				text-align: center;
+				font-size: 21px;
+				margin-bottom: 0;
+			}
+		}
+		.content {
+			margin-left: 11px; 
+			border-left: 1px solid #eee;
+			padding-left: 15px;
+			margin-bottom: 30px;
+		}
+		.songBox {
+			background: $purple;
+			padding: 0 25px;
+			display: inline-block;
+			position: relative;
+			margin-left: -25px;
+		}
+		.songTriangle {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 68px 0 0 40px;
+			border-color: transparent transparent transparent $purple;
+			position: absolute;
+			bottom: 0;
+			right: -40px;
+		}
+		.song {
+			text-align: center;
+			font-size: 17px;
+			font-weight: 600;
+			color: $light-grey;
+		}
+		ul li {
+			font-size: 17px;
+    		margin-bottom: 5px;
+		}
+		.quote {
+			text-align: right;
+			font-family: $serif-font;
+			font-style: italic;
+			font-size: 18px;
+			line-height: 30px;
+			width: 80%;
+			margin: 20px auto;
+		}
+		.quoteAuthor {
+			color: $gold;
+			font-family: $headings-font;
+			display: block;
 		}
 		.content {
 			display: none;
