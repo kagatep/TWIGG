@@ -25,10 +25,12 @@ body.stuff-we-love {
 			cursor: pointer;
 			font-weight: 700;
 			font-size: 26px;
+			margin-bottom: 0;
 		}
 		h4 {
 			color: #339966;
 			font-size: 18px;
+			line-height: 24px;
 			font-weight: 700;
 
 			&.songHeader {
@@ -68,18 +70,31 @@ body.stuff-we-love {
 			font-weight: 600;
 			color: $light-grey;
 		}
+
+		ul {
+			padding-left: 0;
+		}
 		ul li {
-			font-size: 17px;
+			font-size: 16px;
     		margin-bottom: 5px;
+
+    		@media (min-width: $screen-sm-min) {		
+				font-size: 17px;
+			}
 		}
 		.quote {
 			text-align: right;
 			font-family: $serif-font;
 			font-style: italic;
-			font-size: 18px;
-			line-height: 30px;
-			width: 80%;
+			font-size: 16px;
+			line-height: 26px;
 			margin: 20px auto;
+
+			@media (min-width: $screen-sm-min) {		
+				width: 80%;
+				font-size: 18px;
+				line-height: 30px;
+			}
 		}
 		.quoteAuthor {
 			color: $gold;
