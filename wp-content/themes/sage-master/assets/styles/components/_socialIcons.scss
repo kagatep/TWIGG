@@ -1,13 +1,5 @@
 /* =Social menu
 ----------------------------------------------- */
-#social-menu{
-	text-align: center;
-    display: none;
-
-    @media (min-width: $screen-md-min) {
-        display: block;
-      }
-}
 
 #social-menu a, #social-menu a:visited {
     display: inline-block;

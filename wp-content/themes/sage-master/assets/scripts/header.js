@@ -52,4 +52,10 @@ $(window).scroll(function() {
 	} else {
 		$('.bubble2').removeClass('popIn');
 	}
+
+	if($(window).scrollTop() + $(window).height() > $(document).height() - 800) {
+		$('.bubble').removeClass('popIn');
+	} else {
+		//$('.bubble').removeClass('popIn');
+	}
 });
