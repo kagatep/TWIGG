@@ -12,21 +12,28 @@ footer.content-info {
 	color: $medium-grey;
 	clear: both;
 
+	.leftBorder {
+		margin-bottom: 20px;
+	}
 	.logo {
 		width: 60px;
 		margin-bottom: 10px;
 	}
 
-	.donateCta img {
-		width: 100px;
+	.donateCta {
+		img {
+			width: 100px;
+		}
 	}
 	ul {
 		list-style-type: none;
 		padding-left: 0;
-		text-align: left;
+		@media (min-width: $screen-sm-min) {		
+			text-align: left;
+		}
+
 
 		li {
-			text-align: left;
 			display: inline-block; 
 			margin-right: 10px;
 
@@ -89,5 +96,8 @@ footer.content-info {
 }
 
 .last {
-	text-align: left;
+	@media (min-width: $screen-sm-min) {		
+		text-align: left;
+	}
+
 }

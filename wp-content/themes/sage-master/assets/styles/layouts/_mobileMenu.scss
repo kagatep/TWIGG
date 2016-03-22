@@ -10,6 +10,9 @@
 	@include transition(all 300ms);
 	display: table;
 
+	#social-menu{
+	    display: none;
+	}
 	&.closedMenu {
 		opacity: 0.0;
 		top: -100%;
