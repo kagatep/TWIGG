@@ -12,7 +12,20 @@
 	$the_query = new WP_Query( $args );
 	?>
 
-	
+	<div class="slide homeSlide">
+		<div class="videoWrapper">
+            <video autoplay="autoplay" loop muted poster="/wp-content/themes/sage-master/images/thefword-poster.jpg">
+              <source src="/wp-content/themes/sage-master/assets/videos/TheFWord_Final.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="overlay">
+			<a href="http://bit.ly/1SetC7p" target="_blank"></a>
+		</div>
+        <div class="slide-info">
+			<h1>Vote for TWIGG How-To in the #TheFWord video contest!</h1>
+			<p>Click <a href="http://bit.ly/1SetC7p" target="_blank">here</a> to see what feminism means to us. Voting closes on April 3rd, 2016!</p>
+		</div>
+	</div>
 
 	<div class="slide homeSlide">
 		<div class="slide-image" style="background-image: url('http://www.twigghowto.com/wp-content/uploads/2015/09/home1.jpg');">
