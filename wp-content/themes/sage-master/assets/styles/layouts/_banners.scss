@@ -32,7 +32,8 @@
 	width: 100%;
 	height: 300px;
 	position: absolute;
-	overflow:hidden;
+	overflow: hidden;
+	display: none;
 
 	video {
 		width: 100%;
@@ -44,6 +45,7 @@
 
 	@media (min-width: $screen-sm-min) {
 	    height: 485px;
+	    display: block;
 	}
 }
 

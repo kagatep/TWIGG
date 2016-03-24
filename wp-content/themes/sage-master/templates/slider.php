@@ -13,8 +13,10 @@
 	?>
 
 	<div class="slide homeSlide">
-		<div class="videoWrapper">
-            <video autoplay="autoplay" loop muted poster="/wp-content/themes/sage-master/images/thefword-poster.jpg">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/thefword-poster.jpg');">
+		</div>
+		<div class="videoWrapper" style="top: 0; left: 0;">
+            <video autoplay="autoplay" loop muted poster="/wp-content/themes/sage-master/assets/images/thefword-poster.jpg">
               <source src="/wp-content/themes/sage-master/assets/videos/TheFWord_Final.mp4" type="video/mp4">
             </video>
         </div>
@@ -22,8 +24,8 @@
 			<a href="http://bit.ly/1SetC7p" target="_blank"></a>
 		</div>
         <div class="slide-info">
-			<h1>Vote for TWIGG How-To in the #TheFWord video contest!</h1>
-			<p>Click <a href="http://bit.ly/1SetC7p" target="_blank">here</a> to see what feminism means to us. Voting closes on April 3rd, 2016!</p>
+			<h1>We’re a #TheFWord Finalist! Vote every day until April 3rd!</h1>
+			<p>Visit <a href="http://bit.ly/1SetC7p" target="_blank">fword.splashthat.com</a> to vote for our video, "This Part of Me" today!</p>
 		</div>
 	</div>
 
