@@ -12,7 +12,22 @@
 	$the_query = new WP_Query( $args );
 	?>
 
-	
+	<div class="slide homeSlide">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/thefword-poster.jpg');">
+		</div>
+		<div class="videoWrapper" style="top: 0; left: 0;">
+            <video autoplay="autoplay" loop muted poster="/wp-content/themes/sage-master/assets/images/thefword-poster.jpg">
+              <source src="/wp-content/themes/sage-master/assets/videos/TheFWord_Final.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="overlay">
+			<a href="http://bit.ly/1SetC7p" target="_blank"></a>
+		</div>
+        <div class="slide-info">
+			<h1>We’re a #TheFWord Finalist! Vote every day until April 3rd!</h1>
+			<p>Visit <a href="http://bit.ly/1SetC7p" target="_blank">fword.splashthat.com</a> to vote for our video, "This Part of Me" today!</p>
+		</div>
+	</div>
 
 	<div class="slide homeSlide">
 		<div class="slide-image" style="background-image: url('http://www.twigghowto.com/wp-content/uploads/2015/09/home1.jpg');">
