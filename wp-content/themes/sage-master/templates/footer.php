@@ -13,12 +13,12 @@
     		
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6">
-		    <ul class="mainLinks">
-		    	<li><a href="/about-us">About Us</a></li>
-		    	<li><a href="/behind-the-scenes">Behind the Scenes</a></li>
-		    	<li><a href="/stuff-we-love">Stuff We Love</a></li>
-		    	<li><a href="/events">Workshops</a></li>
-		    </ul>
+		    
+		    <?php
+            if (has_nav_menu('footer_navigation')) :
+            	wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'footerNav mainLinks']);
+            endif;
+        	?>
 		    <ul>
 		    	<li><a href="/terms-and-conditions">Terms and Conditions</a></li>
 		    	<li><a href="/contact-us">Contact Us</a></li>
