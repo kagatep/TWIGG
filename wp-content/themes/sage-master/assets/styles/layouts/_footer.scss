@@ -1,3 +1,8 @@
+.leftBorder {
+	@media (min-width: $screen-sm-min) {		
+		border-right: 1px solid $light-grey;
+	}
+}
 footer.content-info {
 	background: #f6f6f6;
 	width: 100%;
@@ -7,20 +12,92 @@ footer.content-info {
 	color: $medium-grey;
 	clear: both;
 
-	@media (min-width: $screen-sm-min) {
-		height: 100px;
+	.leftBorder {
+		margin-bottom: 20px;
+	}
+	.logo {
+		width: 60px;
+		margin-bottom: 10px;
 	}
 
+	.donateCta {
+		img {
+			width: 100px;
+		}
+	}
 	ul {
 		list-style-type: none;
+		padding-left: 0;
+		@media (min-width: $screen-sm-min) {		
+			text-align: left;
+		}
+
 
 		li {
-			display: inline-block;
-			margin-right: 25px;
+			display: inline-block; 
+			margin-right: 10px;
+
+			a {
+				font-weight: 300;
+			}
+		}
+
+		&.mainLinks {
+			margin-bottom: 3px;
+		}
+		&.mainLinks li a {
+			font-weight: 400;
+			font-size: 16px;
 		}
 	}
 
 	p.copyright {
 		font-size: 10px;
 	}
+	
+	#social-menu {
+		margin-bottom: 15px;
+	}
+	#social-menu a {
+		font-size: 25px;
+		width: 25px;
+		height: 25px;
+	}
+	.search-form  {
+		margin-bottom: 20px;
+	}
+}
+.mailchimpForm {
+	width: 350px;
+	margin: 0 auto;
+}
+.subscribeLink {
+	text-align: center;
+	margin: 25px 0;
+
+	@media (min-width: $screen-sm-min) {		
+		margin: 50px 0;
+	}
+	
+	&.left {
+		border-right: 1px solid #eee;
+	}
+	h2 {
+		margin-bottom: 0;
+		line-height: 26px;
+		font-size: 40px;
+		a {
+			color: $purple;
+		}
+	}
+	h4 {
+		font-size: 16px;
+	}
+}
+
+.last {
+	@media (min-width: $screen-sm-min) {		
+		text-align: left;
+	}
+
 }

@@ -1,6 +1,14 @@
 header {
 	position: relative;
 
+	#social-menu{
+		text-align: center;
+	    display: none;
+
+	    @media (min-width: $screen-md-min) {
+	        display: block;
+	      }
+	}
 	.headerBg {
 		position: absolute;
 		width: 100%;
