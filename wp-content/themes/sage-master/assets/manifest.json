@@ -8,7 +8,8 @@
         "scripts/slider.js",
         "scripts/articleGrid.js",
         "scripts/twiggTip.js",
-        "scripts/stuffWeLove.js"
+        "scripts/stuffWeLove.js",
+        "scripts/submittedHowTos.js"
       ],
       "main": true
     },

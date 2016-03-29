@@ -87,11 +87,23 @@ body.submitted-how-tos {
 		text-align: center;
 	}
 	.topics span {
-		font-size: 22px;
-		text-align: center;
-		font-family: $slab-serif-font;
+		border-radius: 15px;
+	    border: 0;
+	    padding: 5px 15px;
+	    font-size: 12px;
+	    text-transform: lowercase;
+	    font-family: $headings-font;
+	    font-weight: 500;
+	    color: white;
+	    background: $purple;
+	    cursor: pointer;
+
+	    &:hover {
+	    	background: $light-turquoise;
+	    }
 	}
-	.topics span:nth-child(2n+2) {
+	.topics span.active {
 		color: $turquoise; 
+		background: $light-turquoise;
 	}
 }
