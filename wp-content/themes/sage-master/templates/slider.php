@@ -21,11 +21,11 @@
             </video>
         </div>
         <div class="overlay">
-			<a href="http://bit.ly/1SetC7p" target="_blank"></a>
+			<a href="https://www.youtube.com/watch?v=_-xIi-54GdA" target="_blank"></a>
 		</div>
         <div class="slide-info">
-			<h1>We’re a #TheFWord Finalist! Vote every day until April 3rd!</h1>
-			<p>Visit <a href="http://bit.ly/1SetC7p" target="_blank">fword.splashthat.com</a> to vote for our video, "This Part of Me" today!</p>
+			<h1>Watch our video, "This Part of Me!"</h1>
+			<!-- <p>Visit <a href="http://bit.ly/1SetC7p" target="_blank">fword.splashthat.com</a> to vote for our video, "This Part of Me" today!</p> -->
 		</div>
 	</div>
 
