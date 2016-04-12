@@ -92,7 +92,7 @@
 			<a href="http://www.twigghowto.com/welcome-to-the-winging-it-girls-guide-2/"></a>
 		</div>
 		<div class="slide-info">
-			<h2>How To: Get started on TWIGGHOWTO.com!</h2>
+			<h2>How To: Get Started on TWIGGHOWTO.com!</h2>
 			<p>Click here for a quick guide into everything TWIGG How-To!</p>
 		</div>
 	</div>
