@@ -30,7 +30,7 @@
 	</div>
 
 	<div class="slide homeSlide">
-		<div class="slide-image" style="background-image: url('http://www.twigghowto.com/wp-content/uploads/2015/09/home1.jpg');">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/home.jpg');">
 		</div>
 		<div class="overlay">
 			<a href="/about-us"></a>
@@ -86,7 +86,7 @@
 <?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 	
 	<div class="slide">
-		<div class="slide-image" style="background-image: url('http://www.twigghowto.com/wp-content/uploads/2015/03/Group-Photo.jpg');">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/group-photo.jpg');">
 		</div>
 		<div class="overlay">
 			<a href="http://www.twigghowto.com/welcome-to-the-winging-it-girls-guide-2/"></a>
