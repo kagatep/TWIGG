@@ -2,6 +2,7 @@
   "dependencies": {
     "main.js": {
       "files": [
+        "scripts/libs/amplify.js",
         "scripts/main.js",
         "scripts/utilities.js",
         "scripts/header.js",

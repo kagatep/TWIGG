@@ -1,21 +1,58 @@
+var app = angular.module('becomeContributorForm', []);
+app.controller('becomeContributorController', function($scope) {
+    //$scope.count = 0;
+    amplify.subscribe( "becomeContributorSuccess", function() {
+		$scope.showSuccess();
+	});
+
+    $scope.steps = $('.formStep').length;
+
+    $scope.stepLength = function() {
+    	var numberedList = [];
+    	for (var i = 1; i <= $scope.steps; i++) {
+    		numberedList.push(i);
+    	}
+	    return numberedList;
+	};
+
+	$scope.prevStep = function() {
+    	var nextStep = $('.formStep.active').data('step') - 1;
+		$('.formStep').removeClass('active');
+		$('.formStep[data-step="' + nextStep + '"]').addClass('active');
+    }
+
+    $scope.nextStep = function() {
+    	var nextStep = $('.formStep.active').data('step') + 1;
+		$('.formStep').removeClass('active');
+		$('.formStep[data-step="' + nextStep + '"]').addClass('active');
+    }
+
+    $scope.showSuccess = function() {
+    	$('.successMessage').removeClass('hide');
+    };
+});
+
+app.directive('navItems', function() {
+	return {
+        template: '<p>1</p>'
+    };
+});
+
 $(document).ready(function() {
 
-	function addRemoveSubject(subject, addSubject) {
-		var currentVal = $('#howtoSubjects').find('input').attr('value');
-		var newVal = currentVal === ''? [] : currentVal.split(', ');
+	$('.contributorOption').click(function() {
+		$('.middleStep').addClass('hide');
+		$('.formStep[data-step="' + $(this).data('showstep') + '"]').removeClass('hide');
+	});
 
-		if(addSubject) {
-			newVal.push(subject);
-		} else {
-			newVal.splice(newVal.indexOf(subject),1);
-		}
+	
 
-		$('#howtoSubjects').find('input').attr('value', newVal.join(', '));
-	}
-
-	$('.topics span').click(function() {
+	$('.checkButtonsWrapper span').click(function() {
 		var doAdd;
-		var subject = $(this).text();
+		var selection = $(this).text(),
+			optionsParent = $(this).parents('.checkButtonsWrapper'),
+			submitValue = optionsParent.find('input'),
+			currentVal = submitValue.attr('value');
 
 		if($(this).hasClass('active')) {
 			$(this).removeClass('active');
@@ -24,7 +61,17 @@ $(document).ready(function() {
 			$(this).addClass('active');
 			doAdd = true;
 		}
-		addRemoveSubject(subject, doAdd);
+		
+		var newVal = currentVal === ''? [] : currentVal.split(', ');
+
+		if(doAdd) {
+			newVal.push(selection);
+		} else {
+			newVal.splice(newVal.indexOf(selection),1);
+		}
+
+		submitValue.attr('value', newVal.join(', '));
+
 	});
 
 });
