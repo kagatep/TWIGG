@@ -21,16 +21,16 @@
             </video>
         </div>
         <div class="overlay">
-			<a href="http://bit.ly/1SetC7p" target="_blank"></a>
+			<a href="https://www.youtube.com/watch?v=_-xIi-54GdA" target="_blank"></a>
 		</div>
         <div class="slide-info">
-			<h1>We’re a #TheFWord Finalist! Vote every day until April 3rd!</h1>
-			<p>Visit <a href="http://bit.ly/1SetC7p" target="_blank">fword.splashthat.com</a> to vote for our video, "This Part of Me" today!</p>
+			<h1>Watch our video, "This Part of Me!"</h1>
+			<!-- <p>Visit <a href="http://bit.ly/1SetC7p" target="_blank">fword.splashthat.com</a> to vote for our video, "This Part of Me" today!</p> -->
 		</div>
 	</div>
 
 	<div class="slide homeSlide">
-		<div class="slide-image" style="background-image: url('http://www.twigghowto.com/wp-content/uploads/2015/09/home1.jpg');">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/home.jpg');">
 		</div>
 		<div class="overlay">
 			<a href="/about-us"></a>
@@ -86,13 +86,13 @@
 <?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 	
 	<div class="slide">
-		<div class="slide-image" style="background-image: url('http://www.twigghowto.com/wp-content/uploads/2015/03/Group-Photo.jpg');">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/group-photo.jpg');">
 		</div>
 		<div class="overlay">
 			<a href="http://www.twigghowto.com/welcome-to-the-winging-it-girls-guide-2/"></a>
 		</div>
 		<div class="slide-info">
-			<h2>How To: Get started on TWIGGHOWTO.com!</h2>
+			<h2>How To: Get Started on TWIGGHOWTO.com!</h2>
 			<p>Click here for a quick guide into everything TWIGG How-To!</p>
 		</div>
 	</div>
