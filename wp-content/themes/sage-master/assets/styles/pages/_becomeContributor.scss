@@ -56,14 +56,35 @@ body.become-a-contributor {
 	}
 }
 
-.formStep {
-	display: none;
 
-	&.active {
-		display: block;
-	}
-}
 body.submitted-how-tos {
+	.becomeContributorForm {
+		ul {
+			padding: 0;
+			text-align: center;
+			font-family: $slab-serif-font;
+			color: $light-grey;
+			font-size: 35px;
+
+			li.completedSteps {
+				color: $medium-grey;
+			}
+		}
+
+		.formStep {
+			height: 250px;
+
+			&[data-step="1"] {
+				margin-top: 250px;
+			}
+		}
+	}
+
+	.contributorFormWrapper {
+		height: 250px;
+		overflow-y: hidden;
+	}
+
 	.topics {
 		text-align: center;
 	}

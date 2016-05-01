@@ -1,11 +1,18 @@
 var app = angular.module('becomeContributorForm', []);
-app.controller('becomeContributorController', function($scope) {
+app.controller('becomeContributorCtrl', function($scope) {
     //$scope.count = 0;
     amplify.subscribe( "becomeContributorSuccess", function() {
 		$scope.showSuccess();
 	});
+	amplify.subscribe( "openBecomeContributorForm", function() {
+		$scope.openForm();
+	});
 
     $scope.steps = $('.formStep').length;
+
+    $scope.openForm = function() {
+    	$('.becomeContributorForm').removeClass('hide');
+    };
 
     $scope.stepLength = function() {
     	var numberedList = [];
@@ -15,17 +22,32 @@ app.controller('becomeContributorController', function($scope) {
 	    return numberedList;
 	};
 
+	$scope.highlightNav = function(step) {
+		$('.nav li').each(function() {
+			if ($(this).data('step') <= step) {
+				$(this).addClass('completedSteps');
+				$(this).next().removeClass('completedSteps');
+			}
+		});
+
+		$('.contributorFormWrapper').animate({ scrollTop: step * 250 + 'px'});
+	};
+
 	$scope.prevStep = function() {
     	var nextStep = $('.formStep.active').data('step') - 1;
 		$('.formStep').removeClass('active');
 		$('.formStep[data-step="' + nextStep + '"]').addClass('active');
-    }
+
+		$scope.highlightNav(nextStep);
+    };
 
     $scope.nextStep = function() {
     	var nextStep = $('.formStep.active').data('step') + 1;
 		$('.formStep').removeClass('active');
 		$('.formStep[data-step="' + nextStep + '"]').addClass('active');
-    }
+
+		$scope.highlightNav(nextStep);
+    };
 
     $scope.showSuccess = function() {
     	$('.successMessage').removeClass('hide');
@@ -38,7 +60,7 @@ app.directive('navItems', function() {
     };
 });
 
-$(document).ready(function() {
+$(function(){ 
 
 	$('.contributorOption').click(function() {
 		$('.middleStep').addClass('hide');
@@ -46,6 +68,9 @@ $(document).ready(function() {
 	});
 
 	
+	$('.beginForm').click(function() {
+		amplify.publish( "openBecomeContributorForm" );
+	});
 
 	$('.checkButtonsWrapper span').click(function() {
 		var doAdd;
