@@ -1,3 +1,14 @@
+var twiggApp = angular.module('twiggApp', [])
+	.controller('mainCtrl', function($scope) {
+
+	$scope.scrollToSection = function(section) {
+		var sectionTop = $(section).offset().top - ($('.headerWrap').height()+ 50);
+		$('body,html').animate({
+			scrollTop: sectionTop
+		}, 500, 'swing');
+	};
+
+});
 $(document).ready(function() {
 	if(window.location.hash === '#submithowto') {
 		$('h4 a').removeClass('active');
