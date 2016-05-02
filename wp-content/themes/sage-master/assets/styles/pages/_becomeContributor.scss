@@ -59,30 +59,114 @@ body.become-a-contributor {
 
 body.submitted-how-tos {
 	.becomeContributorForm {
+		h2 {
+			font-size: 40px;
+		}
 		ul {
 			padding: 0;
 			text-align: center;
 			font-family: $slab-serif-font;
+			font-weight: bold;
 			color: $light-grey;
 			font-size: 35px;
+			
+			li {
+				display: inline-block;
+				opacity: 0;
+
+				&.fadeIn {
+					-webkit-opacity: 1.0; 
+					opacity: 1.0;
+					@include transition(opacity 300ms 300ms);
+					
+					&[data-animation="200"] {
+						@include transition(opacity 300ms 400ms);
+					}
+
+					&[data-animation="300"] {
+						@include transition(opacity 300ms 500ms);
+					}
+
+					&[data-animation="400"] {
+						@include transition(opacity 300ms 600ms);
+					}
+
+				}
+
+				.divider {
+					display: inline-block;
+					width: 85px;
+					height: 6px;
+					background-color: $light-grey;
+					margin: 10px;
+				}
+			}
+
 
 			li.completedSteps {
-				color: $medium-grey;
+				.number {
+					color: $medium-grey;
+					@include transition(all 400ms 400ms);
+				}
+				.divider {
+					background-color: $medium-grey;
+					@include transition(all 400ms 200ms);
+				}
+			}
+
+			li:first-child .divider {
+				display: none;
 			}
 		}
 
 		.formStep {
-			height: 250px;
+			@media (min-width: $screen-sm-min) {	
+				height: 250px;
 
-			&[data-step="1"] {
-				margin-top: 250px;
+				&[data-step="1"] {
+					margin-top: 250px;
+				}
 			}
 		}
+
+		&[data-currentstep="1"] {
+			.prevStep, .reset {visibility:hidden;}
+		}
+		&[data-currentstep="3"] {
+			.prevStep {
+				float: right;
+				text-align: right;
+			}
+			.nextStep {display: none;}
+		}
+
+		&[data-currentstep="4"] {
+			.navOptions {display: none;}
+		}
+		.navOptions p {
+			opacity: 0;
+			cursor: pointer;
+			font-family: $headings-font;
+			margin-bottom: 0;
+
+			&.fadeIn {
+				opacity: 1.0;
+				@include transition(opacity 300ms 700ms);
+			}
+		}
+		.prevStep, .nextStep {
+			color: $turquoise;
+			font-size: 27px; 
+		}
+
+		.nextStep, .reset {text-align: right;}
 	}
 
 	.contributorFormWrapper {
-		height: 250px;
-		overflow-y: hidden;
+		@media (min-width: $screen-sm-min) {	
+			height: 250px;
+			overflow-y: hidden;
+		}
 	}
 
 	.topics {

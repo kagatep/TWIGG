@@ -1,5 +1,5 @@
-var app = angular.module('becomeContributorForm', []);
-app.controller('becomeContributorCtrl', function($scope) {
+var app = angular.module('becomeContributorForm', [])
+	.controller('becomeContributorCtrl', function($scope) {
     //$scope.count = 0;
     amplify.subscribe( "becomeContributorSuccess", function() {
 		$scope.showSuccess();
@@ -8,13 +8,28 @@ app.controller('becomeContributorCtrl', function($scope) {
 		$scope.openForm();
 	});
 
+
+	$scope.hideOnSuccess = false;
     $scope.steps = $('.formStep').length;
+    $scope.bcForm = $('.becomeContributorForm');
 
     $scope.openForm = function() {
-    	$('.becomeContributorForm').removeClass('hide');
+    	//$('.becomeContributorForm').removeClass('hide');
+    	$scope.bcForm.addClass('formOpen');
+    	$scope.bcForm.find('.navOptions p').addClass('fadeIn');
+    	$scope.bcForm.find('.nav li').addClass('fadeIn');
+    	$('.formStep[data-step="1"]').addClass('active');
+    	$scope.highlightNav(1);
     };
 
-    $scope.stepLength = function() {
+    $scope.resetForm = function() {
+    	$('.formStep').removeClass('active');
+    	$('.formStep[data-step="1"]').addClass('active');
+    	$scope.bcForm.attr('data-currentstep',1);
+    	$scope.highlightNav(1);
+    };
+
+    $scope.getNumberOfSteps = function() {
     	var numberedList = [];
     	for (var i = 1; i <= $scope.steps; i++) {
     		numberedList.push(i);
@@ -26,10 +41,11 @@ app.controller('becomeContributorCtrl', function($scope) {
 		$('.nav li').each(function() {
 			if ($(this).data('step') <= step) {
 				$(this).addClass('completedSteps');
-				$(this).next().removeClass('completedSteps');
+				$(this).nextAll().removeClass('completedSteps');
 			}
 		});
 
+		$scope.bcForm.attr('data-currentstep',step);
 		$('.contributorFormWrapper').animate({ scrollTop: step * 250 + 'px'});
 	};
 
@@ -46,11 +62,16 @@ app.controller('becomeContributorCtrl', function($scope) {
 		$('.formStep').removeClass('active');
 		$('.formStep[data-step="' + nextStep + '"]').addClass('active');
 
+		console.log(nextStep);
 		$scope.highlightNav(nextStep);
     };
 
     $scope.showSuccess = function() {
-    	$('.successMessage').removeClass('hide');
+    	$scope.highlightNav(4);
+    	$scope.hideOnSuccess = true;
+    	console.log($scope.hideOnSuccess);
+    	$('.bcForm').addClass('mobileHide');
+    	$('.successMessage').removeClass('mobileHide');
     };
 });
 
