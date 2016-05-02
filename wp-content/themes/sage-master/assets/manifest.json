@@ -2,13 +2,15 @@
   "dependencies": {
     "main.js": {
       "files": [
+        "scripts/libs/amplify.js",
         "scripts/main.js",
         "scripts/utilities.js",
         "scripts/header.js",
         "scripts/slider.js",
         "scripts/articleGrid.js",
         "scripts/twiggTip.js",
-        "scripts/stuffWeLove.js"
+        "scripts/stuffWeLove.js",
+        "scripts/submittedHowTos.js"
       ],
       "main": true
     },

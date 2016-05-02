@@ -8,11 +8,16 @@
   "private": true,
   "dependencies": {
     "modernizr": "2.8.2",
-    "bootstrap-sass-official": "3.3.4"
+    "amplify": "1.1.2",
+    "bootstrap-sass-official": "3.3.4",
+    "angular": "^1.5.5"
   },
   "overrides": {
     "modernizr": {
       "main": "./modernizr.js"
+    },
+    "amplify": {
+      "main": "./lib/amplify.core.js"
     },
     "bootstrap-sass-official": {
       "main": [
