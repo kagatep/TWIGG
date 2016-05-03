@@ -1,0 +1,13 @@
+.noResults {
+	text-align: center;
+
+	p {
+		font-size: 20px;
+    	font-weight: 400;
+	}
+
+	.submitTrigger {
+		text-decoration: underline;
+		color: $turquoise;
+	}
+}
