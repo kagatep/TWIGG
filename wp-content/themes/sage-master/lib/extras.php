@@ -14,7 +14,11 @@ function body_class($classes) {
       $classes[] = basename(get_permalink());
     }
   }
-
+  if (Config\is_not_full_page()) {
+  
+  } else {
+    $classes[] = 'full-page';
+  }
   // Add class if sidebar is active
   if (Config\display_sidebar()) {
     $classes[] = 'sidebar-primary';
