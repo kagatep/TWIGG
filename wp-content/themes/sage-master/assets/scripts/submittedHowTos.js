@@ -1,5 +1,4 @@
-var app = angular.module('becomeContributorForm', [])
-	.controller('becomeContributorCtrl', function($scope) {
+twiggApp.controller('becomeContributorCtrl', function($scope) {
     //$scope.count = 0;
     amplify.subscribe( "becomeContributorSuccess", function() {
 		$scope.showSuccess();
@@ -74,11 +73,11 @@ var app = angular.module('becomeContributorForm', [])
     };
 });
 
-app.directive('navItems', function() {
-	return {
-        template: '<p>1</p>'
-    };
-});
+// app.directive('navItems', function() {
+// 	return {
+//         template: '<p>1</p>'
+//     };
+// });
 
 $(function(){ 
 

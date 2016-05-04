@@ -30,6 +30,10 @@ input[type="submit"],
     	color: #fff;
     }
 
+    &.whiteBtn {
+        background: white;
+        color: $purple;
+    }
     &.purpleBtn {
         background: $purple;
         color: white;
@@ -69,7 +73,7 @@ body.contactus, body.workshops {
 input[type="text"], input[type="email"], select {
     padding: 5px; 
     @media (min-width: $screen-sm-min) {    
-    	padding: 10px;
+    	padding: 8px 10px;
         font-size: 16px;
     }
     line-height: 1.428571429;
@@ -94,17 +98,23 @@ select {
 }
 textarea {
 	resize: none;
-    padding: 10px;
+    padding: 8px 10px;
     font-size: 14px;
     line-height: 1.428571429;
     color: #555;
     width: 100%;
-    background-color: #fff;
+    background-color: $light-light-grey;
     background-image: none;
-    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border: 2px solid $light-light-grey;
+    font-family: $headings-font;
     // border-radius: 4px;
     // -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     // box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+    &:focus {
+        border: 2px solid #ccc;
+    }
 
     &.wpcf7-textarea {
 		height: 180px;

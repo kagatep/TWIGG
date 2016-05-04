@@ -4,8 +4,7 @@ Template Name: Become a Contributor Page
 */
 ?>
 
-<div class="becomeContributorForm col-xs-12 col-sm-12 col-md-8 col-md-offset-2" 
-ng-app="becomeContributorForm" ng-controller="becomeContributorCtrl">
+<div class="becomeContributorForm col-xs-12 col-sm-12 col-md-8 col-md-offset-2" ng-controller="becomeContributorCtrl">
 
 	<?php if ( have_posts() ) : ?>
 
