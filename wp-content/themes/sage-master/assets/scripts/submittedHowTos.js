@@ -62,14 +62,13 @@ var app = angular.module('becomeContributorForm', [])
 		$('.formStep').removeClass('active');
 		$('.formStep[data-step="' + nextStep + '"]').addClass('active');
 
-		console.log(nextStep);
 		$scope.highlightNav(nextStep);
     };
 
     $scope.showSuccess = function() {
     	$scope.highlightNav(4);
     	$scope.hideOnSuccess = true;
-    	console.log($scope.hideOnSuccess);
+    	$('.introText').addClass('hide');
     	$('.bcForm').addClass('mobileHide');
     	$('.successMessage').removeClass('mobileHide');
     };

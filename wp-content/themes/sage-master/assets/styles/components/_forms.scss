@@ -66,22 +66,35 @@ body.contactus, body.workshops {
     	background: $purple;
     }
 }
-input[type="text"], input[type="email"] {
-	padding: 5px 10px;
-    font-size: 14px;
+input[type="text"], input[type="email"], select {
+    padding: 5px; 
+    @media (min-width: $screen-sm-min) {    
+    	padding: 10px;
+        font-size: 16px;
+    }
     line-height: 1.428571429;
-    color: #555;
+    color: $medium-grey;
     width: 100%;
-    background-color: #fff;
+    background-color: $light-light-grey;
     background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-sizing: border-box;
+    border: 2px solid $light-light-grey;
+    font-family: $headings-font;
+    // border-radius: 4px;
+    // -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    // box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+    &:focus {
+        border: 2px solid #ccc;
+    }
+}
+
+select {
+    height: 46px;
 }
 textarea {
 	resize: none;
-    padding: 5px 10px;
+    padding: 10px;
     font-size: 14px;
     line-height: 1.428571429;
     color: #555;
@@ -89,13 +102,17 @@ textarea {
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    // border-radius: 4px;
+    // -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    // box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 
     &.wpcf7-textarea {
 		height: 180px;
     }
+}
+
+input[type="submit"] {
+    background: $turquoise;
 }
 .search-form {
 	.input-group-btn {

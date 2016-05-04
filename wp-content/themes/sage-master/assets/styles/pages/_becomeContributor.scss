@@ -57,139 +57,217 @@ body.become-a-contributor {
 }
 
 
-body.submitted-how-tos {
-	.becomeContributorForm {
-		h2 {
-			font-size: 40px;
+.becomeContributorForm {
+	margin-bottom: 50px;
+	h2 {
+		@media (min-width: $screen-sm-min) {	
+			font-size: 42px;
 		}
-		ul {
-			padding: 0;
-			text-align: center;
-			font-family: $slab-serif-font;
-			font-weight: bold;
-			color: $light-grey;
-			font-size: 35px;
-			
-			li {
-				display: inline-block;
-				opacity: 0;
-
-				&.fadeIn {
-					-webkit-opacity: 1.0; 
-					opacity: 1.0;
-					@include transition(opacity 300ms 300ms);
-					
-					&[data-animation="200"] {
-						@include transition(opacity 300ms 400ms);
-					}
-
-					&[data-animation="300"] {
-						@include transition(opacity 300ms 500ms);
-					}
-
-					&[data-animation="400"] {
-						@include transition(opacity 300ms 600ms);
-					}
-
-				}
-
-				.divider {
-					display: inline-block;
-					width: 85px;
-					height: 6px;
-					background-color: $light-grey;
-					margin: 10px;
-				}
-			}
-
-
-			li.completedSteps {
-				.number {
-					color: $medium-grey;
-					@include transition(all 400ms 400ms);
-				}
-				.divider {
-					background-color: $medium-grey;
-					@include transition(all 400ms 200ms);
-				}
-			}
-
-			li:first-child .divider {
-				display: none;
-			}
-		}
-
-		.formStep {
-			@media (min-width: $screen-sm-min) {	
-				height: 250px;
-
-				&[data-step="1"] {
-					margin-top: 250px;
-				}
-			}
-		}
-
-		&[data-currentstep="1"] {
-			.prevStep, .reset {visibility:hidden;}
-		}
-		&[data-currentstep="3"] {
-			.prevStep {
-				float: right;
-				text-align: right;
-			}
-			.nextStep {display: none;}
-		}
-
-		&[data-currentstep="4"] {
-			.navOptions {display: none;}
-		}
-		.navOptions p {
+		color: black;
+	}
+	ul {
+		padding: 0;
+		text-align: center;
+		font-family: $slab-serif-font;
+		font-weight: bold;
+		color: $light-grey;
+		font-size: 35px;
+		
+		li {
+			display: inline-block;
 			opacity: 0;
-			cursor: pointer;
-			font-family: $headings-font;
-			margin-bottom: 0;
 
 			&.fadeIn {
+				-webkit-opacity: 1.0; 
 				opacity: 1.0;
-				@include transition(opacity 300ms 700ms);
+				@include transition(opacity 300ms 300ms);
+				
+				&[data-animation="200"] {
+					@include transition(opacity 300ms 400ms);
+				}
+
+				&[data-animation="300"] {
+					@include transition(opacity 300ms 500ms);
+				}
+
+				&[data-animation="400"] {
+					@include transition(opacity 300ms 600ms);
+				}
+
+			}
+
+			.divider {
+				display: inline-block;
+				width: 85px;
+				height: 6px;
+				background-color: $light-grey;
+				margin: 10px;
 			}
 		}
-		.prevStep, .nextStep {
-			color: $turquoise;
-			font-size: 27px; 
+
+		li.completedSteps {
+			.number {
+				color: $turquoise;
+				@include transition(all 400ms 400ms);
+			}
+			.divider {
+				background-color: $turquoise;
+				@include transition(all 400ms 200ms);
+			}
 		}
 
-		.nextStep, .reset {text-align: right;}
+		li:first-child .divider {
+			display: none;
+		}
 	}
 
-	.contributorFormWrapper {
+	@media (min-width: $screen-sm-min) {	
+		p {
+			font-size: 18px;
+	    	text-align: center;
+		}
+	}
+	input {
+		background: $light-light-grey;
+	}
+
+	.introText {
+		text-align: center;
+	    font-weight: 400;
+		@media (min-width: $screen-sm-min) {	
+			font-size: 20px;
+			line-height: 30px;
+
+		    span {
+		    	font-weight: 600;
+		    	text-decoration: underline;
+		    	color: $turquoise;
+		    	cursor: pointer;
+		    }
+		}
+	}
+	
+	.wpcf7-mail-sent-ok {
+		display: none !important;
+	}
+	.formStep {
+		div {
+			margin-bottom: 20px;
+		}
 		@media (min-width: $screen-sm-min) {	
 			height: 250px;
-			overflow-y: hidden;
+			padding-top: 30px;
+
+			&[data-step="1"] {
+				margin-top: 250px;
+			}
+
+			div {
+				margin-bottom: 10px;
+			}
+		}
+
+		
+	}
+
+	&[data-currentstep="1"] {
+		.prevStep, .reset {visibility:hidden;}
+	}
+	&[data-currentstep="3"] {
+		.formStep {
+			padding-top: 0;
+		}
+		
+		.prevStep {
+			float: right;
+			text-align: right;
+		}
+		.nextStep {display: none;}
+	}
+
+	&[data-currentstep="4"] {
+		.navOptions {display: none;}
+		.formStep {
+			padding-top: 0;
+		}
+	}
+	.navOptions p {
+		opacity: 0;
+		cursor: pointer;
+		font-family: $headings-font;
+		margin-bottom: 3px;
+		text-align: left;
+
+		&.nextStep, &.reset {text-align: right;}
+		&.fadeIn {
+			opacity: 1.0;
+			@include transition(opacity 300ms 700ms);
+		}
+	}
+	.prevStep, .nextStep {
+		color: $turquoise;
+		font-size: 27px; 
+	}
+
+	
+}
+
+.contributorFormWrapper {
+	@media (min-width: $screen-sm-min) {	
+		height: 250px;
+		overflow-y: hidden;
+	}
+
+	input[type="submit"] {
+		background: $turquoise;
+		color: #fff;
+		float: right;
+	}
+	label {
+		font-family: $slab-serif-font;
+		@media (min-width: $screen-sm-min) {	
+			font-size: 18px;
 		}
 	}
 
-	.topics {
-		text-align: center;
+	.required {
+		color: #660000;
 	}
-	.topics span {
-		border-radius: 15px;
-	    border: 0;
-	    padding: 5px 15px;
-	    font-size: 12px;
-	    text-transform: lowercase;
-	    font-family: $headings-font;
-	    font-weight: 500;
-	    color: white;
-	    background: $purple;
-	    cursor: pointer;
 
-	    &:hover {
-	    	background: $light-turquoise;
-	    }
-	}
-	.topics span.active {
-		color: $turquoise; 
-		background: $light-turquoise;
+	@media (min-width: $screen-sm-min) {	
+		select {
+			width: 70%;
+		}
 	}
 }
+
+.topics {
+	text-align: center;
+	line-height: 40px;
+
+	@media (min-width: $screen-sm-min) {	
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+.topics span {
+	border-radius: 15px;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 15px;
+    text-transform: lowercase;
+    font-family: $headings-font;
+    font-weight: 500;
+    color: white;
+    background: $purple;
+    cursor: pointer;
+
+    &:hover {
+    	background: $light-turquoise;
+    }
+}
+.topics span.active {
+	color: $turquoise; 
+	background: $light-turquoise;
+}
+
