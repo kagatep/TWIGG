@@ -27,4 +27,9 @@ $(document).ready(function() {
  //   		$(this).removeClass('slideHover');
  //  	});
 
+	$('.wolf-tweet-list').slick({
+		nextArrow: $('.next'),
+		prevArrow: $('.prev'),
+		autoplay: false
+	});
 });

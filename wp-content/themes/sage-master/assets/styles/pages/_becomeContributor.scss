@@ -59,9 +59,16 @@
 
 .becomeContributorForm {
 	margin-bottom: 50px;
+
+	footer {
+		position: fixed;
+		bottom: 0;
+	}
 	h2 {
 		@media (min-width: $screen-sm-min) {	
 			font-size: 42px;
+			margin-top: 50px;
+			@include transition(opacity 300ms);
 		}
 		color: black;
 	}
@@ -170,7 +177,19 @@
 		
 	}
 
+	&[data-currentstep="0"] {
+		h2 {
+			margin-top: 100px;
+			@include transition(all 400ms);
+		}
+	}
+
 	&[data-currentstep="1"] {
+		h2 {
+			margin-top: 50px;
+			@include transition(all 400ms);
+		}
+
 		.prevStep, .reset {visibility:hidden;}
 	}
 	&[data-currentstep="3"] {
@@ -206,10 +225,19 @@
 	}
 	.prevStep, .nextStep {
 		color: $turquoise;
-		font-size: 27px; 
+		font-size: 28px; 
 	}
 
-	
+	.reset {
+		font-size: 14px;
+    	margin-top: 10px;
+	}
+
+	.successMessage {
+		h4 {
+			text-align: center;
+		}
+	}
 }
 
 .contributorFormWrapper {
