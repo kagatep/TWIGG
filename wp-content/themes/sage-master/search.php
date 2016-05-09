@@ -11,8 +11,9 @@
   		 	<h2 class="slabSerif centeredText">Sorry! No results were found.</h2>
 			<p>Try your search again or <span class="accordionTrigger submitTrigger" data-opentab="submitrequest">submit a how-to request</u>.</p>
 			  <div class="accordionTab" data-tab="submitrequest">
-				
+				<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
 				<?php echo do_shortcode( '[gravityform id="2" title="false" description="false"]' ); ?>
+			 	</div>
 			  </div>
   		 </div>
   	</div>

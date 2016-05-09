@@ -17,12 +17,12 @@ Template Name: Become a Contributor Page
 
 	<?php endif; ?>
 
-	<div class="nav col-xs-12 col-sm-12 col-md-12 mobileHide">
+	<div class="nav mobileHide">
 		<ul>
 		    <li ng-repeat="n in getNumberOfSteps()" data-step="{{n}}" data-animation="{{n * 100}}"><span class="divider"></span><span class="number">{{n}}</span></li>
 		</ul>
 	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 contributorFormWrapper">
+	<div class="contributorFormWrapper">
 		<div class="bcForm">
 		<?php echo do_shortcode( '[contact-form-7 id="2214" title="Become Contributor"]' ); ?>
 		</div>

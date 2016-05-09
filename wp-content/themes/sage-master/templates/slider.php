@@ -21,11 +21,11 @@
             </video>
         </div>
         <div class="overlay">
-			<a href="https://www.youtube.com/watch?v=_-xIi-54GdA" target="_blank"></a>
+			<a href="/the-f-word-video-contest"></a>
 		</div>
         <div class="slide-info">
-			<h1>Watch our video, "This Part of Me!"</h1>
-			<!-- <p>Visit <a href="http://bit.ly/1SetC7p" target="_blank">fword.splashthat.com</a> to vote for our video, "This Part of Me" today!</p> -->
+			<h1>We're #TheFWord winner!</h1>
+			<p>Click here to read more and watch the winning video, "This Part of Me!"</p>
 		</div>
 	</div>
 
@@ -41,29 +41,6 @@
 			<!--<p>Check back every <b>Monday</b> and <b>Friday</b> for new articles!</p>-->
 		</div>
 	</div>
-	
-
-	<!--<?php
-		$args = array( 'numberposts' => '2' );
-		$recent_posts = wp_get_recent_posts( $args );
-		foreach( $recent_posts as $recent )
-		{
-			?>
-	<div class="slide">
-		<div class="slide-image" style="background-image: url('http://staging.twigghowto.com/wp-content/uploads/2015/07/flowers131.jpg');">
-		</div>
-		<div class="overlay">
-			<?php echo get_permalink($recent["ID"]) ?>
-		</div>
-		<div class="slide-info">
-			<h2><?php echo $recent["post_title"] ?></h2>
-			<p>Giving flowers on special occasions has been around for hundreds of years. Click here to read more.</p>
-		</div>
-	</div>
-
-		<?php
-		}
-	?> -->
 
 	<?php if( $the_query->have_posts() ): ?>
 	<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>

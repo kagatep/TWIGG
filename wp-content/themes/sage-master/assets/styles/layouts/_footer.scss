@@ -69,10 +69,17 @@ footer.content-info {
 }
 
 .subscribe {
-.mailchimpForm {
-	width: 350px;
-	margin: 0 auto;
+	clear: both;
+	background: $purple;
+	@media (min-width: $screen-sm-min) {		
+		background: #fff;
+	}
 }
+.subscribe {
+	.mailchimpForm {
+		width: 350px;
+		margin: 0 auto;
+	}
 }
 .subscribeLink {
 	text-align: center;
@@ -88,13 +95,23 @@ footer.content-info {
 	h2 {
 		margin-bottom: 0;
 		line-height: 26px;
-		font-size: 40px;
-		a {
-			color: $purple;
+		font-size: 32px;
+		@media (min-width: $screen-sm-min) {	
+			color: $turquoise;	
+			font-size: 40px;
+			a {
+				color: $purple;
+			}
 		}
 	}
 	h4 {
 		font-size: 16px;
+		color: #000;
+		margin: 0;
+		@media (min-width: $screen-sm-min) {
+			margin: 10px 0;		
+			a { color: #000; }
+		}
 	}
 }
 

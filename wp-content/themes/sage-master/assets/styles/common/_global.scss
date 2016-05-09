@@ -27,13 +27,18 @@ h1, h2, h3, h4, h5, h6 {
 	//color: $text-grey;
 }
 
-h2.slabSerif {
+h1 {
+	font-size: 24px;
+	@media (min-width: $screen-sm-min) {
+	    font-size: 36px;
+	}
+}
+.slabSerif {
 	font-family: $slab-serif-font;
 }
 
-h2.script {
+.script {
 	font-family: $script-font;
-	color: $turquoise;
 }
 
 .centeredText {
@@ -41,11 +46,10 @@ h2.script {
 }
 
 p {
-	//font-family: 'Istok Web', sans-serif;
 	font-family: source-sans-pro, sans-serif;
 	font-weight: 300;
-	font-size: 15px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 24px;
 	color: $text-grey;
 }
 
@@ -74,4 +78,18 @@ ul {
 
 .full-page.mobile {
 	padding-top: 60px;
+}
+
+.videoHolder {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoHolder iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
