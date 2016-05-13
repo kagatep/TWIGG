@@ -21,7 +21,7 @@
             </video>
         </div>
         <div class="overlay">
-			<a href="/the-f-word-video-contest"></a>
+			<a href="/f-word-video-contest-winner"></a>
 		</div>
         <div class="slide-info">
 			<h1>We're #TheFWord winner!</h1>
