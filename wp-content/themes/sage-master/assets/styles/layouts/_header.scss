@@ -15,7 +15,7 @@ header {
 		height: 55px;
 		top: 0px;
 		left: 0px;
-		background: url('#{$icon-images-path}mint_bg.jpg') top center no-repeat;
+		// background: url('#{$icon-images-path}mint_bg.jpg') top center no-repeat;
 		opacity: 0.5;
 		z-index: -200;
 
@@ -27,7 +27,7 @@ header {
 		padding: 10px 0;
 
 		li {
-			font-family: 'Montserrat', sans-serif;
+			@include headings(700);
 			color: $text-grey;
 			display: inline-block;
 		}
@@ -77,9 +77,9 @@ header {
 	}
 
 	.desktopMenu {
-		font-size: 28px;
-		left: 5px;
-		top: 6px;
+		font-size: 22px;
+		left: 0;
+		top: 10px;
 		position: absolute;
 		cursor: pointer;
 		opacity: 0.0;
@@ -89,22 +89,25 @@ header {
 	h2.subtitle {
 		display: none;
 		margin-top: 6px;
-		font-size: 18px;
-		font-family: 'Montserrat', sans-serif;
+		font-size: 17px;
+		@include headings(700);
 		color: #000;
 		@include transition(all 300ms ease-in);
+		text-transform: uppercase;
+    	letter-spacing: 2px;
 
 		@media (min-width: $screen-sm-min) {
 		    display: block;
 		  }
 
         span {
-			color: $dark-blue;
-			font-family: 'Arvo', serif;
-			font-weight: 700;
+			color: $turquoise;
+			font-family: $slab-serif-font-700;
 			font-size: 24px;
 			position: relative;
-			top: 2px;
+			//top: 2px;
+			text-transform: lowercase;
+
 		}
 	}
 
@@ -116,7 +119,7 @@ header {
 
 	nav.mainNav {
 		
-		padding: 15px 30px;
+		padding: 10px 30px;
 		background: $light-light-grey;
 
 	}
@@ -130,7 +133,7 @@ header {
 		li, li:active {
 			margin-right: 25px;
 			text-transform: lowercase;
-			font-size: 16px;
+			font-size: 15px;
 			@include transition(all 300ms);
 			padding-bottom: 0;
     		border-bottom: 3px solid $light-light-grey;
@@ -154,9 +157,9 @@ header {
 
 		li {
 			margin-right: 10px;
-			font-size: 13px;
+			font-size: 14px;
 			text-transform: lowercase;
-			font-family: 'Arvo', serif;
+			font-family: $slab-serif-font-300;
 			color: $gold;
 
 			a {

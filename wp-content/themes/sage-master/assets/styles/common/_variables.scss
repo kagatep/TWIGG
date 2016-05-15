@@ -8,6 +8,7 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
+$global-bg:				#fff;
 $salmon: 				#fac8bf; //250,200,191
 $lighter-turquoise: 	#94fffc;
 $light-turquoise: 		#c5ede8;
@@ -47,17 +48,23 @@ $purple: 				#e4d4ef; //228,212,239
 0% { opacity: 0; transform: scale(0.5); }
 100% { opacity: 1; transform: scale(1); }
 }
-// font-family: 'Permanent Marker', cursive;
-// font-family: 'Gochi Hand', cursive;
-// font-family: 'Shadows Into Light', cursive;
-// font-family: 'Abril Fatface', cursive;
-// font-family: 'Amatic SC', cursive;
-// font-family: 'Blog Script Light'
-// font-family: 'Blog Script'
 
-$headings-font  	: 'Montserrat', sans-serif;
+
+#mfPreviewBar { display: none !important; }
+//$headings-font  	: 'Montserrat', sans-serif;
+$headings-font		: 'museo-sans',sans-serif;
+$subtitle-font		: 'Museo Sans 300';
+$text-font			: source-sans-pro, sans-serif;
 $script-font		: BlogScript, cursive;
 $script-font-light	: BlogScriptLight, cursive;
-$serif-font			: playfair-display, serif;
-$serif-font-italic	: playfair-display, serif;
-$slab-serif-font	: 'Arvo', serif;
+$serif-font			: 'Merriweather', serif;
+$serif-font-italic	: 'Merriweather', serif;
+$slab-serif-font	: 'Museo Slab 500';
+$slab-serif-font-300: 'Museo Slab 300';
+$slab-serif-font-500: 'Museo Slab 500';
+$slab-serif-font-700: 'Museo Slab 700';
+
+@mixin headings($weight) {
+	font-family: $headings-font;
+	font-weight: $weight;
+}

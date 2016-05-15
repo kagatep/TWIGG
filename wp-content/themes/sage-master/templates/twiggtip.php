@@ -1,5 +1,5 @@
-<div class="row mobileHide">
-	<div class="col-sm-12 col-md-12 twiggTips"> 
+<!-- <div class="row mobileHide">
+	<div class="col-sm-12 col-md-12 twiggTips">  -->
 		<p>Put an open avocado in a container with hard boiled eggs to prevent avocado from browning.</p>
 		<p>If you don't have time to iron shirts, put them next to you when you take a hot shower.</p>
 		<p>If you're a night owl, try setting a bedtime alarm.</p>
@@ -50,6 +50,6 @@
 <p>Face your phone speaker into an empty cup to amplify the sound.</p>
 <p>To check if your noodles are done, try to break them with chopsticks.</p>
 <p>Make any gloves touchscreen with conductive thread. </p>
-
+<!-- 
 	</div>
-</div>
+</div> -->

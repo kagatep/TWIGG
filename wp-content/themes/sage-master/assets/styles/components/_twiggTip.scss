@@ -2,27 +2,32 @@
 	margin-top: 25px;
 	text-align: center;
 	position: relative;
-	height: 70px;
+	padding: 15px;
 
+	hr {
+		border: 2px solid $gold;
+		width: 115px;
+		margin: 15px auto;
+	}
 	p {
-		width: 96%;
-		font-size: 19px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 20px;
 		position: absolute;
-		font-family: $serif-font-italic;
-		font-style: italic;
 		opacity: 0.0;
+		@include headings(300);
 		transition: all 400ms;
-		color: $medium-grey;
+		color: black;
 		text-align: center;
 
 		span {
-			text-transform: uppercase;
-			font-family: $headings-font;
-			color: $gold;
-			font-size: 24px;
+			text-transform: lowercase;
+			font-family: $serif-font-italic;
+			font-weight: 700;
+			color: black;
+			font-size: 22px;
 			letter-spacing: 1px;
-			font-style: normal;
+			font-style: italic;
+			text-align: center;
 		}
 	}
 	p.active {

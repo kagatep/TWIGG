@@ -1,16 +1,16 @@
 
 h4.intro {
-	font-family: $slab-serif-font;
-	text-align: center;
-    padding: 40px 0;
-    font-size: 25px;
-    color: $gold;
-    font-style: italic;
-    clear: both;
+	@include headings(500);
+	text-align: left;
+    font-size: 17px;
+    color: black;
+    text-transform: lowercase;
+    margin-bottom: 15px;
 }
+
 .categoryRow {
 	margin-bottom: 30px;
-
+	position: relative;
 
 	h3.entry-title {
 		font-size: 16px;
@@ -20,14 +20,15 @@ h4.intro {
 	h2 {
 		border-bottom: 3px solid #f6f6f6;
 		text-transform: lowercase;
-		font-family: 'Arvo',serif;
+		font-family: $slab-serif-font;
 		margin: 30px 0;
-		line-height: 0px;
+		margin-top: 40px;
+		line-height: 7px;
 
 		a {
 			color: $gold;
 			padding-right: 10px;
-			background-color: white;
+			background-color: $global-bg;
 			transition: all .2s ease-in-out;
 		}
 		a:hover {
@@ -36,22 +37,32 @@ h4.intro {
 		}
 	}
 
+	.seeMore {
+		font-size: 12px;
+		float: right;
+		@include headings(700);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		position: absolute;
+		top: 28px;
+		right: 13px;
+	}
 	.fa {
 		font-size: 20px;
 	}
 }
-.categoryRow:nth-child(3n+1) {
-	background: #F2EAF7;
+.categoryRow:nth-child(3n+1):not(.recentlyAdded) {
+	//background: #F2EAF7;
 
 	h2 {
 		font-family: $serif-font-italic;
 		font-style: italic;
-		border-bottom: 1px solid $text-grey;
+		border-bottom: 3px solid $text-grey;
 		text-transform: capitalize;
 
 		a {
 			color: $text-grey;
-			background: #F2EAF7;
+			//background: #F2EAF7;
 		}
 	}
 }
@@ -69,8 +80,12 @@ h4.intro {
 
 .categoryRow.recentlyAdded {
 	h2 {
-		text-align: center;
-		font-family: $headings-font;
+		font-size: 36px;
+		margin-bottom: 10px;
+		color: $turquoise;
+		@include headings(700);
+
+		span { background: $global-bg; }
 	}
 }
 

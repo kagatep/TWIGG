@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	$twiggTip.first().addClass('active');
 	
-	$('<span>TWIGG tip #<span class="number"></span>: </span>').prependTo($twiggTip);
+	$('<span>TWIGG tip #<span class="number"></span></span><hr />').prependTo($twiggTip);
 
 	$twiggTip.each(function() {
 		var i = $(this).index() + 1;
