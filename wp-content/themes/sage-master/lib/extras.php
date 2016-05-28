@@ -37,7 +37,7 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
 
 function excerpt_more() {
   //return ' &hellip; <a href="' . get_permalink() . '">' . __('', 'sage') . '</a>';
-  return ' <a href="' . get_permalink() . '" class="fa fa-long-arrow-right">' . __('', 'sage') . '</a>';
+  return '... <a href="' . get_permalink() . '" class="readMore">read more' . __('', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
