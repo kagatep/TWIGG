@@ -57,4 +57,8 @@ $(document).ready(function() {
 		var tab = $(this).data('opentab');
 		$('.accordionTab[data-tab="' + tab + '"]').slideToggle();
 	});
+
+	jQuery(function() {
+	  jQuery.scrollDepth();
+	});
 });
