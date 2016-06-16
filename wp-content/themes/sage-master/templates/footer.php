@@ -3,7 +3,7 @@
   	<div class="row">
   		<div class="col-md-10 col-md-offset-1">
   		<div class="col-xs-12 col-sm-3 col-md-3 leftBorder">
-  			<img class="logo" src="/wp-content/themes/sage-master/assets/images/crown.png">
+  			<img class="logo" src="http://www.twigghowto.com/wp-content/uploads/2015/03/twigg-logo.png">
 		    <?php dynamic_sidebar('sidebar-footer'); ?><br />
 		    <a href="http://www.gofundme.com/fampok" class="donateCta" target="_blank"><img src="http://www.twigghowto.com/wp-content/uploads/2015/02/donate.png"></a>
 		</div>
