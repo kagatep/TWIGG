@@ -12,22 +12,6 @@
 	$the_query = new WP_Query( $args );
 	?>
 
-	<div class="slide homeSlide">
-		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/thefword-poster.jpg');">
-		</div>
-		<div class="videoWrapper" style="top: 0; left: 0;">
-            <video autoplay="autoplay" loop muted poster="/wp-content/themes/sage-master/assets/images/thefword-poster.jpg">
-              <source src="/wp-content/themes/sage-master/assets/videos/TheFWord_Final.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="overlay">
-			<a href="/f-word-video-contest-winner"></a>
-		</div>
-        <div class="slide-info">
-			<h1>We're #TheFWord winner!</h1>
-			<p>Click here to read more and watch the winning video, "This Part of Me!"</p>
-		</div>
-	</div>
 
 	<div class="slide homeSlide">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/home.jpg');">

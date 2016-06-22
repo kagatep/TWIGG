@@ -10,7 +10,8 @@
     "modernizr": "2.8.2",
     "amplify": "1.1.2",
     "bootstrap-sass-official": "3.3.4",
-    "angular": "^1.5.5"
+    "angular": "^1.5.5",
+    "scroll-depth": "^0.9.1"
   },
   "overrides": {
     "modernizr": {
