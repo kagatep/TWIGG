@@ -65,7 +65,7 @@ h4.intro {
     	color: $turquoise;
 	}
 }
-.categoryRow:nth-child(3n+1):not(.recentlyAdded) {
+.categoryRow:not(.recentlyAdded) {
 	//background: #F2EAF7;
 
 	h2 {
@@ -81,16 +81,6 @@ h4.intro {
 	}
 }
 
-.categoryRow:nth-child(3n+2) {
-
-	h2 {
-		font-family:$script-font;
-
-		a {
-			color: $light-turquoise;
-		}
-	}
-}
 
 .categoryRow.recentlyAdded {
 	h2 {

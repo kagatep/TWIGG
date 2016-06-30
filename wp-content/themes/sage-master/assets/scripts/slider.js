@@ -9,17 +9,17 @@ $(document).ready(function() {
   		infinite: true
 	});
 
-	if($('.home-slider .slick-active').find('video').length) {
-		$('.home-slider .slick-active').find('video').get(0).play();
-	}
+	// if($('.home-slider .slick-active').find('video').length) {
+	// 	$('.home-slider .slick-active').find('video').get(0).play();
+	// }
 
-	$homeSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
-	    $('.home-slider .slick-slide').find('video').get(0).pause();
+	// $homeSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+	//     $('.home-slider .slick-slide').find('video').get(0).pause();
 
-	    if($('.home-slider .slick-active').find('video').length) {
-	    	$('.home-slider .slick-active').find('video').get(0).play();
-	    }
-	});
+	//     if($('.home-slider .slick-active').find('video').length) {
+	//     	$('.home-slider .slick-active').find('video').get(0).play();
+	//     }
+	// });
 
 	// $('.slide').hover(function() {
  //    	$(this).addClass('slideHover');

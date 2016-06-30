@@ -26,25 +26,29 @@
 		</div>
 	</div>
 
-	<?php if( $the_query->have_posts() ): ?>
-	<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
+	
 	<div class="slide">
-		<div class="slide-image" style="background-image: url('<?php the_field('featured_image'); ?>');">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/health.jpg');">
 		</div>
 		<div class="overlay">
-			<a href="#"></a>
-		</div>
-		<div class="slide-info">
-			<h2><?php the_title(); ?></h2>
-			<p><?php the_field('featured_description'); ?></p>	
+			<a href="/health"></a>
 		</div>
 	</div>
-	<?php endwhile; ?>
+	<div class="slide">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/home.jpg');">
+		</div>
+		<div class="overlay">
+			<a href="/health"></a>
+		</div>
+	</div>
+	<div class="slide">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/travel.jpg');">
+		</div>
+		<div class="overlay">
+			<a href="/health"></a>
+		</div>
+	</div>
 
-	<?php endif; ?>
-
-<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 	
 	<div class="slide">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/group-photo.jpg');">
