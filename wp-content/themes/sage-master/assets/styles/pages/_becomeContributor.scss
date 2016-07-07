@@ -72,7 +72,7 @@
 		}
 		color: black;
 	}
-	ul {
+	ul.navSteps {
 		padding: 0;
 		text-align: center;
 		font-family: $slab-serif-font;
@@ -241,9 +241,11 @@
 }
 
 .contributorFormWrapper {
-	@media (min-width: $screen-sm-min) {	
-		height: 250px;
-		overflow-y: hidden;
+	&.small {
+		@media (min-width: $screen-sm-min) {	
+			height: 250px;
+			overflow-y: hidden;
+		}
 	}
 
 	input[type="submit"] {
@@ -299,3 +301,20 @@
 	background: $light-turquoise;
 }
 
+.contributorAgreementTrigger {
+	color: $turquoise;
+	text-decoration: underline;
+}
+.contributorAgreement {
+	text-align: left;
+	ul {
+		padding-left: 19px;
+		margin-top: 15px;
+		font-size: 15px;
+	}
+
+	li {
+		margin-bottom: 10px;
+		font-weight: 300;
+	}
+}

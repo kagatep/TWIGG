@@ -69,9 +69,16 @@ twiggApp.controller('becomeContributorCtrl', function($scope) {
     $scope.showSuccess = function() {
     	$scope.highlightNav(4);
     	$('.bcForm').addClass('mobileHide');
+    	$('.becomeContributorForm.full').find('.bcForm').addClass('hide');
+    	$('.becomeContributorForm.full').find('.introText').addClass('hide');
     	$('.successMessage').removeClass('mobileHide');
+    	$('.successMessage').removeClass('hide');
 
     	$scope.bcForm.find('h2').text('thanks!');
+    };
+
+    $scope.expandForm = function() {
+    	console.log('expanding');
     };
 });
 
