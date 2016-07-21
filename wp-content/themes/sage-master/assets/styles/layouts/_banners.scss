@@ -78,14 +78,14 @@ header.categoryHeader {
 
 body.about-us {
 	.categoryBanner {
-		background: url('#{$icon-images-path}categories/about-us.png') center center no-repeat;
+		background: url('http://www.twigghowto.com/wp-content/uploads/2016/07/about-us.jpg') center 25% no-repeat;
 		background-size: cover;
 		h2 {
 			font-family: $script-font;
 		    letter-spacing: 0px;
 		    font-size: 40px;
 		    text-transform: capitalize;
-		    color: $gold;
+		    color: #fff;
 		    //padding-top: 170px;
 		}
 	}
