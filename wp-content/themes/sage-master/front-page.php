@@ -32,22 +32,6 @@ wp_reset_postdata();
 </div>
 
 
-<div class="row">
-    <div class="col-xs-12 col-sm-9 col-md-9">
-        <div style="width: 100%; background:#e4d4ef; padding: 15px;">
-            <h3 class="script centeredText" style="color: #fff; margin-bottom: 20px;">TWIGG How-To Originals</h3>
-            <div class="videoHolder" style="width: 100%;">
-            <iframe src="https://www.youtube.com/embed/vg5XV_LO0ls" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-sm-3 col-md-3 mobileHide twiggTips">
-        <?php get_template_part('templates/twiggtip'); ?>
-    </div>
-
-
-</div>
-
 <div class="row categoryRow auto">
 <div class="col-xs-12"><h2><a href="/category/auto">Auto</a></h2>
 <span class="seeMore"><a href="/category/auto">see more articles ></a></span></div>
