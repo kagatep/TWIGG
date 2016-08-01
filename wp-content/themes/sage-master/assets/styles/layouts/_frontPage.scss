@@ -27,7 +27,7 @@ h4.intro {
 		margin-top: 40px;
 		line-height: 7px;
 
-		a {
+		a,span {
 			color: $gold;
 			padding-right: 10px;
 			background-color: $global-bg;
@@ -74,7 +74,7 @@ h4.intro {
 		border-bottom: 3px solid $text-grey;
 		text-transform: capitalize;
 
-		a {
+		a,span {
 			color: $text-grey;
 			//background: #F2EAF7;
 		}

@@ -4,8 +4,8 @@ $(document).ready(function() {
 		nextArrow: $('.next'),
 		prevArrow: $('.prev'),
 		dots: true,
-		autoplay: false,
-  		autoplaySpeed: 7000,
+		autoplay: true,
+  		autoplaySpeed: 3000,
   		infinite: true
 	});
 

@@ -1,5 +1,5 @@
 
-<div class="row categoryRow recentlyAdded">
+<div class="row categoryRow">
     <div><h2><span>Recently Added</span></h2></div>
 
 <h4 class="intro">Check back every Monday and Friday for new articles!</h4>
