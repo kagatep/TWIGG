@@ -159,7 +159,7 @@ header {
 			margin-right: 10px;
 			font-size: 14px;
 			text-transform: lowercase;
-			font-family: $slab-serif-font-300;
+			@include slab(500);
 			color: $gold;
 
 			a {

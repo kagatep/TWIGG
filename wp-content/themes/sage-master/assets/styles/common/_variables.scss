@@ -59,12 +59,14 @@ $script-font		: BlogScript, cursive;
 $script-font-light	: BlogScriptLight, cursive;
 $serif-font			: 'Merriweather', serif;
 $serif-font-italic	: 'Merriweather', serif;
-$slab-serif-font	: 'Museo Slab 500';
-$slab-serif-font-300: 'Museo Slab 300';
-$slab-serif-font-500: 'Museo Slab 500';
-$slab-serif-font-700: 'Museo Slab 700';
+$slab-serif-font	:  "museo-slab",serif;
 
 @mixin headings($weight) {
 	font-family: $headings-font;
+	font-weight: $weight;
+}
+
+@mixin slab($weight) {
+	font-family: $slab-serif-font;
 	font-weight: $weight;
 }
