@@ -23,7 +23,24 @@
 			<!--<p>Check back every <b>Monday</b> and <b>Friday</b> for new articles!</p>-->
 	</div>
 
-	
+	<div class="slide health">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/auto.jpg');">
+		</div>
+		<div class="description">
+			<h2 style="color: white;">Auto</h2>
+			<h3>Car troubles? We’ve got the tips you need to get back on the road.</h3>
+			<a href="/health"></a>
+		</div>	
+	</div>
+	<div class="slide health">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/finance.jpg');">
+		</div>
+		<div class="description">
+			<h2>finance</h2>
+			<h3>Learn to manage your money and be your most business savvy self.</h3>
+			<a href="/health"></a>
+		</div>
+	</div>
 	<div class="slide health">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/health.jpg');">
 		</div>
@@ -33,36 +50,58 @@
 			<a href="/health"></a>
 		</div>
 	</div>
-	<div class="slide">
+	<div class="slide health">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/home.jpg');">
 		</div>
 		<div class="description">
 			<h2>household</h2>
-			<div class="divider"></div>
 			<h3>Home improvement 101</h3>
 			<a href="/health"></a>
 		</div>
 	</div>
-	<div class="slide">
+	<div class="slide health">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/law.jpg');">
+		</div>
+		<div class="description">
+			<h2>law</h2>
+			<h3>Understanding basics of law, your rights, and politics.</h3>
+			<a href="/health"></a>
+		</div>
+	</div>
+	<div class="slide health">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/personal-PR.jpg');">
+		</div>
+		<div class="description">
+			<h2>personal PR</h2>
+			<h3>Advice on all of life’s unspoken rules and sticky situations.</h3>
+			<a href="/health"></a>
+		</div>
+	</div>
+	<div class="slide health">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/school_career.jpg');">
+		</div>
+		<div class="description">
+			<h2>school & career</h2>
+			<h3>Tips for succeeding academically and beyond.</h3>
+			<a href="/health"></a>
+		</div>
+	</div>
+	<div class="slide health">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/tech.jpg');">
+		</div>
+		<div class="description">
+			<h2>technology</h2>
+			<h3>Keepin’ up with all the latest tips & tricks in technology.</h3>
+			<a href="/health"></a>
+		</div>
+	</div>
+	<div class="slide health">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/travel.jpg');">
 		</div>
 		<div class="description">
-			<h2>Auto</h2>
-			<h3>Car troubles? We’ve got the tips you need to get back on the road.</h3>
+			<h2>travel</h2>
+			<h3>Guides to help you explore new places.</h3>
 			<a href="/health"></a>
-		</div>	
-	</div>
-
-	
-	<div class="slide">
-		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/group-photo.jpg');">
-		</div>
-		<div class="overlay">
-			<a href="http://www.twigghowto.com/welcome-to-the-winging-it-girls-guide-2/"></a>
-		</div>
-		<div class="slide-info">
-			<h2>How To: Get Started on TWIGGHOWTO.com!</h2>
-			<p>Click here for a quick guide into everything TWIGG How-To!</p>
 		</div>
 	</div>
 	

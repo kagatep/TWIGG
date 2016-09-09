@@ -39,7 +39,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/overlay');
     ?>
 
-     <?php if (Config\is_not_full_page()) : ?>
+    <?php if (Config\is_not_full_page() && !is_front_page()) : ?>
 
     <div class="wrap container" role="document">
       <div class="content row">
