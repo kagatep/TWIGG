@@ -4,7 +4,8 @@ Template Name: Display Authors
 */
 
 // Get all users order by amount of posts
-$allUsers = get_users('orderby=post_count&order=DESC');
+//$allUsers = get_users('orderby=post_count&order=DESC');
+$allUsers = get_users('orderby=display_name');
 
 $users = array();
 $admins = array();
@@ -72,7 +73,14 @@ foreach($allUsers as $currentUser)
 ?>
 </div>
 
-<div class="contributors col-xs-12 col-sm-12 col-md-10 col-md-offset-1">	
+<div class="contributors teamTWIGG col-xs-12 col-sm-12 col-md-10 col-md-offset-1">	
+<h2 style="font-size: 26px;">Team TWIGG How-To</h2>
+<div class="row"></div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1" style="border-bottom: 3px solid #e4d4ef; margin-bottom: 30px;"></div>
+
+<div class="contributors col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+	<div class="row">
 	<?php
 
 		foreach($users as $user)
@@ -99,6 +107,7 @@ foreach($allUsers as $currentUser)
 			<?php
 		}
 	?>
+	</div>
 </div>
 </div>
 <section class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">	

@@ -31,23 +31,15 @@ $(document).ready(function() {
 	var $caitlyn = $('body.about-us').find('.CAITLYN');
 	$caitlyn.prependTo($caitlyn.parent());
 
+	var $aboutUs = $('body.about-us');
+	var $teamTWIGG = $aboutUs.find('.teamTWIGG .row');
 
-	var caitlin = $('body.about-us').find('.caitlin-cohen');
-	var lauren = $('body.about-us').find('.lauren-montgomery');
-	var rachel = $('body.about-us').find('.rachel-wiegardt-egel');
-	var cydney = $('body.about-us').find('.cydney-gottlieb');
-	var maria = $('body.about-us').find('.maria-zhou');
-	var avi = $('body.about-us').find('.avi-khosravyani');
-	var aurora = $('body.about-us').find('.aurora-burgos');
-	
-	
-	aurora.prependTo(aurora.parent());
-	avi.prependTo(avi.parent());
-	cydney.prependTo(cydney.parent());
-	maria.prependTo(maria.parent());
-	rachel.prependTo(rachel.parent());
-	lauren.prependTo(lauren.parent());
-	caitlin.prependTo(caitlin.parent());
+	var editors = ['.caitlin-cohen','.lauren-montgomery','.rachel-wiegardt-egel','.cydney-gottlieb',
+					'.maria-zhou','.avi-khosravyani','.aurora-burgos','.elena-cherine'];
+
+	for(var i = 0; i < editors.length; i++) {
+		$(editors[i]).appendTo($teamTWIGG);
+	}
 
 	$('.accordionTab').hide();
 	$('.accordionTrigger').click(function() {

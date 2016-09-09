@@ -157,6 +157,14 @@
 	.wpcf7-mail-sent-ok {
 		display: none !important;
 	}
+
+	.contributorAgreementCheck span.wpcf7-not-valid-tip {
+		position: absolute !important;
+		width: 300px;
+	}
+	.wpcf7-response-output.wpcf7-validation-errors {
+		display: none !important;
+	}
 	.formStep {
 		div {
 			margin-bottom: 20px;
