@@ -64,53 +64,27 @@ h4.intro {
     	color: $turquoise;
 	}
 }
-.categoryRow:not(.recentlyAdded) {
-	//background: #F2EAF7;
-
-	h2 {
-		font-family: $serif-font-italic;
-		font-style: italic;
-		border-bottom: 3px solid $text-grey;
-		text-transform: capitalize;
-
-		a,span {
-			color: $text-grey;
-			//background: #F2EAF7;
-		}
-	}
-}
-
-
-.categoryRow.recentlyAdded {
-	h2 {
-		font-size: 36px;
-		margin-bottom: 15px;
-		color: $turquoise;
-		@include headings(700);
-
-		span { background: $global-bg; }
-	}
-}
-
-.miscellaneous, .uncategorized, .videos {
-	display: none;
-}
 
 .aboutUsTout {
 	height: 470px; 
 	margin: 50px 0;
-	background: $dark-blue;
 	overflow: hidden;
 	img {
-		width: 70%;
-		float: left;
+		@media (min-width: $screen-sm-min) {	
+			width: 70%;
+			float: right;
+		}
 	}
 	.toutInfo {
-		width: 30%;
-		padding: 5% 3%;
-		float: left;
+		@media (min-width: $screen-sm-min) {	
+			width: 30%;
+		}
+		padding: 3%;
+		height: 65%;
+		float: right;
 		box-sizing: border-box;
 		text-align: center;
+		background: $dark-blue;
 		h2 {
 			font-family: $headings-font;
 			letter-spacing: 5px;
@@ -132,6 +106,24 @@ h4.intro {
 			line-height: 22px;
 			font-size: 13px;
 			font-weight: 500;
+		}
+
+		&.bottom {
+			height: 35%;
+			background: $turquoise;
+			h2 {
+				font-family: $script-font-light;
+				letter-spacing: 0;
+				text-transform: initial;
+				font-size: 36px;
+				font-weight: 300;
+				margin: 0;
+				margin-top: 12px;
+			}
+			p {
+				font-size: 17px;
+				text-decoration: underline;
+			}
 		}
 	}
 }

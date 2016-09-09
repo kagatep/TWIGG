@@ -26,6 +26,8 @@
 </div>
 
 <div class="aboutUsTout">
+
+    <img src="/wp-content/themes/sage-master/assets/images/group-photo.jpg">
     <div class="toutInfo">
         <h2>About Us</h2>
         <p>Click here for a quick guide into everything TWIGG How-To!</p>
@@ -34,7 +36,10 @@
         <div class="divider"></div>
         <p><a href="" class="icon-twitter"></a> "revolving tweets go here"</p>
     </div>
-    <img src="/wp-content/themes/sage-master/assets/images/group-photo.jpg">
+    <div class="toutInfo bottom">
+        <h2>Become a Contributor</h2>
+        <p>learn more >></p>
+    </div>
 </div>
 
 <div class="container videosTout">
