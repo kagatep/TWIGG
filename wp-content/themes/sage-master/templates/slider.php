@@ -24,13 +24,14 @@
 	</div>
 
 	<div class="slide health">
+		<a href="/health">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/auto.jpg');">
 		</div>
 		<div class="description">
 			<h2 style="color: white;">Auto</h2>
 			<h3>Car troubles? We’ve got the tips you need to get back on the road.</h3>
-			<a href="/health"></a>
-		</div>	
+		</div>
+		</a>
 	</div>
 	<div class="slide health">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/finance.jpg');">

@@ -1,7 +1,8 @@
 <div class="container">
     <div class="row categoryRow recentlyAdded">
-        <div><h2><span>Recently Added</span></h2></div>
-        <h4 class="intro">Check back every Monday and Friday for new articles!</h4>
+        <div class="col-xs-12 col-sm-12 col-md-12"><h2><span>Recently Added</span></h2>
+            <h4 class="intro">Check back every Monday and Friday for new articles!</h4>
+        </div>
 
         <?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
         <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
@@ -30,9 +31,9 @@
     <img src="/wp-content/themes/sage-master/assets/images/group-photo.jpg">
     <div class="toutInfo">
         <h2>About Us</h2>
-        <p>Click here for a quick guide into everything TWIGG How-To!</p>
+        <p><a href="welcome-to-the-winging-it-girls-guide-2/">Click here for a quick guide into everything TWIGG How-To!</a></p>
         <div class="divider"></div>
-        <p>Learn more about our team</p>
+        <p><a href="/about-us">Learn more about our team.</a></p>
         <div class="divider"></div>
         <p><a href="" class="icon-twitter"></a> "revolving tweets go here"</p>
     </div>

@@ -15,11 +15,12 @@ header {
 		height: 55px;
 		top: 0px;
 		left: 0px;
-		// background: url('#{$icon-images-path}mint_bg.jpg') top center no-repeat;
+		background: url('#{$icon-images-path}mint_bg.jpg') top center no-repeat;
 		opacity: 0.5;
 		z-index: -200;
 
-		@media (min-width: $screen-sm-min) {		
+		@media (min-width: $screen-sm-min) {	
+			background: none;	
 			height: 70px;
 		}
 	}
