@@ -1,6 +1,6 @@
     <div class="subscribeLink leftBorder col-xs-12 col-sm-6 col-md-6">
         <h2 class="script"><a href="http://eepurl.com/bd6_Rb" target="_blank">Subscribe</a></h2>
-        <h4>to our monthly newsletter!</h4>
+        <h4>to our newsletter!</h4>
 
         <div class="mailchimpForm">
         <!-- Begin MailChimp Signup Form -->

@@ -25,22 +25,22 @@
     ?>
     </div>
 </div>
-
+<div class="container">
 <div class="aboutUsTout">
-
+    <div class="leftSideTout">
+    <h2>About Us</h2>
     <img src="/wp-content/themes/sage-master/assets/images/group-photo.jpg">
+    </div>
     <div class="toutInfo">
-        <h2>About Us</h2>
-        <p><a href="welcome-to-the-winging-it-girls-guide-2/">Click here for a quick guide into everything TWIGG How-To!</a></p>
-        <div class="divider"></div>
-        <p><a href="/about-us">Learn more about our team.</a></p>
-        <div class="divider"></div>
-        <p><a href="" class="icon-twitter"></a> "revolving tweets go here"</p>
+        <p>The Winging It Girls' Guide, or TWIGG How-To for short, is a how-to platform with articles and videos in nine practical categories. All of our content is created
+            by women, for women (with a few wingmen!). Want to hear our story and see what we believe in?</p>
+            <p>Click here! </p>
     </div>
     <div class="toutInfo bottom">
-        <h2>Become a Contributor</h2>
-        <p>learn more >></p>
+        <h2>Contribute a How-To</h2>
+        <p>get started ></p>
     </div>
+</div>
 </div>
 
 <div class="container videosTout">
