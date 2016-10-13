@@ -21,7 +21,7 @@
         wp_reset_postdata();
     ?>
     </div>
-    <div class="recent"><h4><a href="#">See more recent ></a></h4></div>
+    <!--<div class="recent"><h4><a href="#">See more recent ></a></h4></div> -->
 </div>
 <div class="container">
 <div class="aboutUsTout">
@@ -64,7 +64,7 @@
 <div class="videoHolder" style="width: 100%; margin-bottom: 20px;">
     <div id="latestVideo"></div>
 </div>
-<div class="container videosTout">
+<div class="container videosTout" style="margin-bottom: 20px;">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8">
             <h2>videos</h2>
@@ -75,10 +75,10 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <h4>watch more ></h4>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 nextVideo">
+            <div class="col-xs-6 col-sm-6 col-md-6 nextVideo">
 
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 nextVideo">
+            <div class="col-xs-6 col-sm-6 col-md-6 nextVideo">
 
             </div>
         </div>
