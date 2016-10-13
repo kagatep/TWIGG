@@ -79,8 +79,8 @@ header {
 
 	.desktopMenu {
 		font-size: 22px;
-		left: 0;
-		top: 10px;
+		left: 5px;
+		top: 9px;
 		position: absolute;
 		cursor: pointer;
 		opacity: 0.0;
@@ -221,7 +221,7 @@ header {
 }
 
 header .scrolled h2.subtitle {
-	margin-left: 45px;
+	margin-left: 35px;
 }
 
 header .scrolled .desktopMenu {

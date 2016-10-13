@@ -49,7 +49,8 @@
         <?php endif;  ?>
     
         <!--<a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>-->
-        <img class="logo" src="http://www.twigghowto.com/wp-content/uploads/2015/03/twigg-logo.png">
+            <img class="logo" src="http://www.twigghowto.com/wp-content/uploads/2015/03/twigg-logo.png">
+        </a>
         <div class="hamburger desktopHide"><i class="fa fa-bars mobileMenu"></i></div>
         <div class="content">
             <div class="left">

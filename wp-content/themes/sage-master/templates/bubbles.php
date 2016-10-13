@@ -1,2 +1,2 @@
-<a class="bubble bubble1 mobileHide" href="/become-a-contributor">become a contributor</a>
+<a class="bubble bubble1 mobileHide" href="/become-a-contributor"><span>hey!</span><br />become a contributor</a>
 <a class="bubble bubble2 mobileHide" href="#" ng-click="scrollToSection('footer')">subscribe to our newsletter</a>

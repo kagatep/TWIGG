@@ -2,11 +2,12 @@
 	text-align: center;
 	position: fixed;
 	color: #fff;
+	cursor: pointer;
 
     &.bubble1 {
 		width: 150px;
 		height: 150px;
-		background: rgba(255,204,0,.8);
+		background: rgba(250,200,191,.8);
 		-moz-border-radius: 100px;
 		-webkit-border-radius: 100px;
 		border-radius: 100px;
@@ -15,17 +16,23 @@
 		-ms-transform: rotate(7deg); /* IE 9 */
 	    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
 	    transform: rotate(7deg);
-		font-family: $script-font;
 	    @include transition(bottom 0.25s 400ms);
-	    //@include transition(opacity 400ms 200ms);
-	    font-size: 26px;
-	    padding-top: 40px;
+	    font-size: 23px;
+	    line-height: 24px;
+		padding-top: 30px;
+		font-family: $headings-font;
+		font-weight: 600;
+
+	    span {
+	    	font-family: $script-font-light;
+	    	font-size: 36px;
+	    }
     }
 
     &.bubble2 {
     	width: 120px;
 		height: 120px;
-		background: rgba(0,175,155,.8);
+		background: rgba($opaque-turquoise,.8);
 		-moz-border-radius: 150px;
 		-webkit-border-radius: 150px;
 		border-radius: 100px;
