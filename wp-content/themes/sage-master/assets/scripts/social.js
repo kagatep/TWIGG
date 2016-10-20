@@ -9,9 +9,19 @@ $(document).ready(function() {
 	window.onYouTubeIframeAPIReady = function() {
 		v.getVideos();
 	};
+
+	$(window).scroll(function() { 
+		if($('#latestVideo').hasClass('inView')) return;
+		if(($(window).scrollTop() + $(window).height()) > $('#latestVideo').offset().top) {
+			$('#latestVideo').addClass('inView');
+			// Only play when player is loaded, otherwise it will play when it's ready
+			if(v && v.player) {
+				v.player.playVideo();
+			}
+		}
+	});
 	var $videosTout = $('.videosTout');
 	v = {
-		player : {},
 		ytVideos : {},
 		getVideos : function() {
 			$.get( "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCyjqwZ8HbZae5ApdZfxdL8w&order=date&type=video&videoSyndicated=true&key=AIzaSyD6cFSzL0H9iigVC6Lc_wKSoW0_sza4eoo", function( data ) {
@@ -29,6 +39,14 @@ $(document).ready(function() {
 			});
 		},
 		createVideoIframe : function(videoId) {
+			function onPlayerReady(event) {
+				// if player is in view and hasn't started playing, then play it
+				if($('#latestVideo').hasClass('inView') && (v.player.getPlayerState() < 0)) {
+		        	v.player.playVideo();
+		        }
+		        v.player.mute();
+		    }
+
 			v.player = new YT.Player('latestVideo', {
 				height: '390',
 				width: '640',
@@ -38,14 +56,8 @@ $(document).ready(function() {
 				    //'onStateChange': onPlayerStateChange
 				  }
 			});
-			
-			function onPlayerReady(event) {
-		        event.target.playVideo();
-		        event.target.mute();
-		    }
 		},
 		displayNextVideos : function(videos) {
-			console.log(videos);
 			var nextVideos = $('.nextVideo');
 			for (var i = 1; i < (nextVideos.length + 1); i++) {
 				var $nextVideo = nextVideos.eq(i - 1);

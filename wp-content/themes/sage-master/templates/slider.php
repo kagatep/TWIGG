@@ -25,7 +25,7 @@
 	</div>
 
 	<div class="slide auto">
-		<a href="/auto">
+		<a href="/category/auto">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/auto.jpg');">
 		</div>
 		<div class="description">
@@ -35,76 +35,84 @@
 		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/finance">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/finance.jpg');">
 		</div>
 		<div class="description">
 			<h2>finance</h2>
 			<h3>Learn to manage your money and be your most business savvy self.</h3>
-			<a href="/health"></a>
 		</div>
+		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/health">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/health.jpg');">
 		</div>
 		<div class="description bottom-left">
 			<h2>Health</h2>
 			<h3>Ways to keep yourself at your healthiest.</h3>
-			<a href="/health"></a>
 		</div>
+		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/household">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/home.jpg');">
 		</div>
 		<div class="description bottom-left">
 			<h2>household</h2>
-			<h3>Home improvement 101</h3>
-			<a href="/household"></a>
+			<h3>Home improvement 101.</h3>
 		</div>
+		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/law">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/law.jpg');">
 		</div>
 		<div class="description top-left">
 			<h2>law</h2>
 			<h3>Understanding basics of law, your rights, and politics.</h3>
-			<a href="/health"></a>
 		</div>
+		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/personal-pr">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/personal-PR.jpg');">
 		</div>
 		<div class="description">
 			<h2>personal PR</h2>
 			<h3>Advice on all of life’s unspoken rules and sticky situations.</h3>
-			<a href="/health"></a>
 		</div>
+		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/school">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/school_career.jpg');">
 		</div>
 		<div class="description bottom-left">
 			<h2>school & career</h2>
 			<h3>Tips for succeeding academically and beyond.</h3>
-			<a href="/health"></a>
 		</div>
+		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/tech">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/tech.jpg');">
 		</div>
 		<div class="description bottom-left">
 			<h2>technology</h2>
 			<h3>Keepin’ up with all the latest tips & tricks in technology.</h3>
-			<a href="/health"></a>
 		</div>
+		</a>
 	</div>
 	<div class="slide">
+		<a href="/category/travel">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/travel.jpg');">
 		</div>
 		<div class="description">
 			<h2>travel</h2>
 			<h3>Guides to help you explore new places.</h3>
-			<a href="/health"></a>
 		</div>
+		</a>
 	</div>
 	
 </div>
