@@ -131,24 +131,24 @@
 
 .arrowNav {
 	cursor: pointer;
-	width: 25px;
+	width: 60px;
 	height: 450px;
 	position: absolute;
 }
 
 .prev {
 	background: url('#{$icon-images-path}arrow-purple-l.png') center center no-repeat;
-	background-size: 100%;
+	background-size: 45%;
 	//float: left;
-	left: 25px;
+	left: 0;
 	top: 0;
 }
 
 .next {
 	background: url('#{$icon-images-path}arrow-purple-r.png') center center no-repeat;
-	background-size: 100%;
+	background-size: 45%;
 	//float: right;
-	right: 25px;
+	right: 0;
 	top: 0;
 }
 
