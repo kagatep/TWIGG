@@ -189,6 +189,10 @@ header {
 		@media (min-width: $screen-sm-min) {
 			top: -145px;
 		}
+
+		nav ul {
+			text-align: right !important;
+		}
 	}
 
 	.headerDropdown.open {

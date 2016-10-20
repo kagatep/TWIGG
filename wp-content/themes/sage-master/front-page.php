@@ -30,7 +30,7 @@
     <img src="/wp-content/themes/sage-master/assets/images/group-photo.jpg">
     </div>
     <div class="toutInfo">
-        <p><span>The Winging It Girls' Guide,</span><br /> or <b>TWIGG How-To</b> for short, is a how-to platform with articles and videos in nine practical categories. All of our content is created
+        <p><span>The Winging It Girls' Guide,</span><br /> or TWIGG How-To for short, is a how-to platform with articles and videos in nine practical categories. All of our content is created
             by women, for women (with a few wingmen!). Want to hear our story and see what we believe in?</p>
             <p><a style="color: white;" href="/about-us">click here ></a></p>
     </div>
@@ -67,13 +67,13 @@
 <div class="container videosTout" style="margin-bottom: 20px;">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8">
-            <h2><a href="/category/videos/">videos</a></h2>
+            <h2>videos</h2>
             <h3>Women In Media [Episode 5]: Female Script Intros</h3>
             <p>Today we're discussing the twitter account @femscriptintros, the obsession with beautiful female characters, and what it's like to be a female screenwriter!</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 nextVideos">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <h4><a href="https://www.youtube.com/channel/UCyjqwZ8HbZae5ApdZfxdL8w" target="_blank">watch more ></a></h4>
+                <h4>watch more ></h4>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 nextVideo">
 
