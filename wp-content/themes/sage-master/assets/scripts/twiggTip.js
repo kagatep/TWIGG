@@ -18,4 +18,12 @@ $(document).ready(function() {
 		$('.twiggTips').find('p').eq(pIndex).addClass('active');
 	}, 6000);
 	
+	var $author = $('.bottomLeft .authorAvatar');
+	$author.first().addClass('active');
+
+	setInterval(function () {
+		var pIndex = Math.floor(Math.random() * $author.length);
+		$('.bottomLeft').find('.active').removeClass('active');
+		$('.bottomLeft .authorAvatar').eq(pIndex).addClass('active');
+	}, 1000);
 });

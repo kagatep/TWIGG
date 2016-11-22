@@ -26,6 +26,7 @@ article {
 	position: relative;
 
 	.entry-thumbnail {
+		cursor: pointer;
 		// width: 100%;
 		height: 225px; 
 		// overflow: hidden;
@@ -147,13 +148,13 @@ article {
 		color: $dark-blue;
 	}
 }
-.prevPost {
+.prevPost, .nav-previous {
 	background: url('#{$icon-images-path}arrow-turquoise-l.png') top left no-repeat;
 	background-size: auto 100%;
 	padding-left: 40px;
 }
 
-.nextPost {
+.nextPost, .nav-next {
 	background: url('#{$icon-images-path}arrow-turquoise-r.png') top right no-repeat;
 	background-size: auto 100%;
 	padding-right: 40px;
@@ -168,9 +169,19 @@ article {
 .postNav img {
 	height: 65px;
 }
+.nav-previous, .nav-next {
+	float: left;
+	width:50%;
+	font-size: 18px;
+    font-family: $headings-font;
+    color: $turquoise;
+    font-weight: 600;
+    text-transform: lowercase;
+}
 
-
-
+.nav-next {
+	float: right;
+}
 body.category, body.author {
 
 	.article {

@@ -35,7 +35,7 @@
 		</a>
 	</div>
 	<div class="slide">
-		<a href="/category/finance">
+		<a href="/category/finances">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/finance.jpg');">
 		</div>
 		<div class="description">

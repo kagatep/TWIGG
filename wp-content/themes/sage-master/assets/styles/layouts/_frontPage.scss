@@ -153,6 +153,11 @@ h4.intro {
 
 			img {
 				width: 100%;
+				position: absolute;
+				opacity: 0;
+			}
+			img.active {
+				opacity: 1.0;
 			}
 			.icon-instagram {
 				position: absolute;

@@ -35,9 +35,14 @@
             <p><a style="color: white;" href="/about-us">click here ></a></p>
     </div>
     <div class="toutInfo bottomLeft">  
-        <a href="http://instagram.com/twigghowto/" target="_blank">
-    <img src="http://www.twigghowto.com/wp-content/uploads/2016/10/wingit.jpg">
-    <i class="icon-instagram"></i></a>
+        <!-- <a href="http://instagram.com/twigghowto/" target="_blank">
+    <img src="http://www.twigghowto.com/wp-content/uploads/2016/10/wingit.jpg"> 
+<i class="icon-instagram"></i></a>
+-->
+    <?php
+      get_template_part('templates/authors-frontpage');
+    ?>
+    
 </div>
     <div class="toutInfo bottom">
         <h2>Contribute a How-To</h2>

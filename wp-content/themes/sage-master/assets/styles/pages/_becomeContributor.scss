@@ -1,62 +1,3 @@
-// body.become-a-contributor {
-// 	.leftContact {
-// 		padding: 20px;
-// 		padding-top: 70px;
-
-// 		@media (min-width: $screen-sm-min) {	
-// 		width: 45%;
-// 		height: 100%; 
-// 		position: fixed;
-// 		top: 0px;
-// 		left: 0px;
-// 		display: table;
-	
-// 		}
-// 		.content {
-// 			display: table-cell;
-// 			vertical-align: middle;
-// 		}
-// 	}
-
-// 	.contactForm {
-// 		width: 100%;
-// 		@media (min-width: $screen-sm-min) {	
-// 			width: 55%;
-// 			float: right;
-// 			border-left: 3px solid black;
-// 		}
-// 	}
-// 	h3 {
-// 		text-align: center;
-// 		color: $turquoise;
-// 	}
-// 	h4 {
-// 		text-align: center;
-// 	}
-
-// 	iframe {
-// 		margin: 0 auto;
-// 		width: 100%;
-// 		min-height: 1895px;
-// 	}
-
-// 	p {
-// 		font-size: 18px;
-// 		line-height: 26px;
-
-// 		.mobileHide {
-// 			display: inline-block;
-// 		}
-// 	}
-
-// 	.number {
-// 		color: $gold;
-// 		font-family: $slab-serif-font;
-// 		font-size: 18px;
-// 	}
-// }
-
-
 .becomeContributorForm {
 	margin-bottom: 50px;
 
@@ -129,10 +70,13 @@
 	}
 
 	@media (min-width: $screen-sm-min) {	
-		p {
-			font-size: 18px;
+		p, span {
+			font-size: 16px;
 	    	text-align: center;
+	    	font-weight: 500;
+	    	font-family: $headings-font;
 		}
+
 	}
 	input {
 		background: $light-light-grey;
