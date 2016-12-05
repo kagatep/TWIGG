@@ -34,7 +34,7 @@ $(document).ready(function() {
 	var $aboutUs = $('body.about-us');
 	var $teamTWIGG = $aboutUs.find('.teamTWIGG .row');
 
-	var editors = ['.caitlin-cohen','.lauren-montgomery','.rachel-wiegardt-egel','.cydney-gottlieb',
+	var editors = ['.lauren-montgomery','.rachel-wiegardt-egel','.cydney-gottlieb',
 					'.maria-zhou','.avi-khosravyani','.aurora-burgos','.elena-cherine'];
 
 	for(var i = 0; i < editors.length; i++) {
