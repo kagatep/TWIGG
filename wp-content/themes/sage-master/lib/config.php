@@ -91,7 +91,8 @@ function is_not_full_page() {
        *
        */
       [
-        ['is_page_template', ['full-page.php','templates/become-contributor.php','templates/fullpage-subfooter.php']]
+        ['is_page_template', ['full-page.php','templates/become-contributor.php','templates/fullpage-subfooter.php']],
+        'is_woocommerce'
       ]
     );
 

@@ -43,6 +43,9 @@ function setup() {
 
   // Add icomoon font, used in the main stylesheet
   wp_enqueue_style('icomoon', get_template_directory_uri() . '/assets/fonts/icomoon/style.css', array());
+
+  add_theme_support( 'woocommerce' );
+
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 

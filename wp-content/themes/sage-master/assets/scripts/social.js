@@ -12,11 +12,13 @@ $(document).ready(function() {
 
 	$(window).scroll(function() { 
 		if($('#latestVideo').hasClass('inView')) return;
-		if(($(window).scrollTop() + $(window).height()) > $('#latestVideo').offset().top) {
-			$('#latestVideo').addClass('inView');
-			// Only play when player is loaded, otherwise it will play when it's ready
-			if(v && v.player) {
-				v.player.playVideo();
+		if($('#latestVideo').length) {
+			if(($(window).scrollTop() + $(window).height()) > $('#latestVideo').offset().top) {
+				$('#latestVideo').addClass('inView');
+				// Only play when player is loaded, otherwise it will play when it's ready
+				if(v && v.player) {
+					v.player.playVideo();
+				}
 			}
 		}
 	});

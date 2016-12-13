@@ -1,0 +1,13 @@
+.woocommerce ul.products li.product .price {
+	color: $text-grey;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+	color: $text-grey;
+}
+
+body.woocommerce.single-product {
+	.container {
+		padding-top: 50px;
+	}
+}
