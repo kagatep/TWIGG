@@ -3,8 +3,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <?php wp_head(); ?>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
 
   <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9.js"></script>
@@ -71,3 +71,10 @@
 <script type="text/javascript" src="/wp-content/themes/sage-master/assets/fonts/blogscript/TWIGG.js"></script>
 
 </head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8615096985841325",
+    enable_page_level_ads: true
+  });
+</script>

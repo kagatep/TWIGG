@@ -8,7 +8,8 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
-  <body <?php body_class(); ?> ng-app="twiggApp" ng-controller="mainCtrl">
+  <!-- <body <?php body_class(); ?> ng-app="twiggApp" ng-controller="mainCtrl"> -->
+  <body <?php body_class(); ?>>
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBDQNM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

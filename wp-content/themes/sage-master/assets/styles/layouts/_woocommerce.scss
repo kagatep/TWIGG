@@ -1,5 +1,10 @@
-.woocommerce ul.products li.product .price {
-	color: $text-grey;
+.woocommerce ul.products li.product {
+	.price {
+		color: $text-grey;
+	}
+	a {
+		margin-left: 10px;
+	}
 }
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {
@@ -10,4 +15,29 @@ body.woocommerce.single-product {
 	.container {
 		padding-top: 50px;
 	}
+}
+
+.cart-customlocation {
+	text-align: right;
+
+	a {
+		font-family: $headings-font;
+	}
+}
+
+.woocommerce div.product form.cart .button {
+	border-radius: 15px;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 16px;
+    text-transform: lowercase;
+    font-family: $headings-font;
+    font-weight: 500;
+    color: white;
+    background: $turquoise;
+
+    &:hover {
+    	background: $light-turquoise;
+    	color: #fff;
+    }
 }

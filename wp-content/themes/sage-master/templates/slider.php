@@ -23,7 +23,16 @@
 		
 			<!--<p>Check back every <b>Monday</b> and <b>Friday</b> for new articles!</p>-->
 	</div>
-
+	<div class="slide">
+		<a href="/category/spanish">
+		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/spanish.jpg'); background-position: center;">
+		</div>
+		<div class="description bottom-right">
+			<h2>ESPAÑOL</h2>
+			<h3>Artículos para capacitarte y ayudarte a tener éxito.</h3>
+		</div>
+		</a>
+	</div>
 	<div class="slide auto">
 		<a href="/category/auto">
 		<div class="slide-image" style="background-image: url('/wp-content/themes/sage-master/assets/images/categories/auto.jpg');">

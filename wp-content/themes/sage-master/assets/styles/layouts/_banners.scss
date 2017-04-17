@@ -183,3 +183,9 @@ body.category-misc {
 		background-size: cover;
 	}
 }
+body.category-spanish {
+	.categoryBanner {
+		background: url('#{$icon-images-path}categories/spanish.jpg') center no-repeat;
+		background-size: cover;
+	}
+}
